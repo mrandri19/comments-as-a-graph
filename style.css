@@ -30,3 +30,15 @@ h1 {
     top: 0px;
     left: 0px;
 }
+
+#minimap {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+#minimap > img {
+    background: rgba(255, 255, 255, 0.45);
+    height: auto;
+    width: 17%;
+}

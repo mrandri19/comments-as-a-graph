@@ -3,7 +3,7 @@ const graph = document.getElementById("graph")
 const container = document.getElementById("container")
 
 const source = `graph {
-    bgcolor="#EEF2FF" 
+    bgcolor=transparent
     node[shape=rectangle style=filled  color="#D6DAF0" ]
     splines=true
     42064745
@@ -165,3 +165,7 @@ const zoom = svgPanZoom('#graph > svg', {
     dblClickZoomEnabled: false,
     controlIconsEnabled: true
 });
+
+
+result = Viz(source, { format: "png-image-element", scale: 0.2, engine: "fdp" });
+document.getElementById('minimap').appendChild(result)
