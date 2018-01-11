@@ -1,0 +1,9 @@
+{
+  "name": "graph-comments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "viz.js": "^1.8.0"
+  }
+}
