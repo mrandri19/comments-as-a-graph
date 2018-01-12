@@ -14,15 +14,26 @@
         <h1>Graph Comments</h1>
     </header>
 
-    <div id="minimap"></div>
+    <canvas width="300" height="150" id="minimap"></canvas>
+    <svg id="scopeContainer" class="thumbViewClass">
+        <g>
+            <rect id="scope" fill="red" fill-opacity="0.1" stroke="red" stroke-width="2px" x="-70.19496021220158" y="1.0000000000000142"
+                width="425.38992042440316" height="236"></rect>
+            <line id="line1" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"></line>
+            <line id="line2" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"></line>
+        </g>
+    </svg>
 
     <div id="container">
         <div id="graph"></div>
     </div>
 
+
     <script src="node_modules/viz.js/viz.js"></script>
 
     <script src="http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
+
+    <script src="./thumbnail.js"></script>
 
     <script src="index.js"></script>
 </body>
