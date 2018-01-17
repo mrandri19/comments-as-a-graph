@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const canvas = document.createElement('canvas');
     canvas.id = 'minimap-canvas';
-    canvas.width = 300;
-    canvas.height = 300 * (sizes.height / sizes.width);
+    canvas.width = window.innerWidth * 0.25;
+    canvas.height = window.innerWidth * 0.25 * (sizes.height / sizes.width);
     canvas.classList.add('minimap');
 
     document.getElementById('minimap-container').appendChild(canvas);
 
     const minimapSquare = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     minimapSquare.id = 'minimap-square';
-    minimapSquare.setAttribute('width', '300');
+    minimapSquare.setAttribute('width', canvas.width);
     minimapSquare.setAttribute('height', canvas.height);
     minimapSquare.classList.add('minimap');
 
@@ -184,22 +184,63 @@ document.addEventListener('DOMContentLoaded', () => {
     format: 'svg',
     engine: 'fdp',
   });
+  const eventsHandler = {
+    haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
+    init(options) {
+      const { instance } = options;
+      let initialScale = 1;
+      let pannedX = 0;
+      let pannedY = 0;
+      // Init Hammer
+      // Listen only for pointer and touch events
+      this.hammer = Hammer(options.svgElement, {
+        inputClass: Hammer.SUPPORT_POINTER_EVENTS ? Hammer.PointerEventInput : Hammer.TouchInput,
+      });
+      // Enable pinch
+      this.hammer.get('pinch').set({ enable: true });
+      // Handle double tap
+      this.hammer.on('doubletap', () => {
+        instance.zoomIn();
+      });
+      // Handle pan
+      this.hammer.on('panstart panmove', (ev) => {
+        // On pan start reset panned variables
+        if (ev.type === 'panstart') {
+          pannedX = 0;
+          pannedY = 0;
+        }
+        // Pan only the difference
+        instance.panBy({ x: ev.deltaX - pannedX, y: ev.deltaY - pannedY });
+        pannedX = ev.deltaX;
+        pannedY = ev.deltaY;
+      });
+      // Handle pinch
+      this.hammer.on('pinchstart pinchmove', (ev) => {
+
+        // On pinch start remember initial zoom
+        if (ev.type === 'pinchstart') {
+          initialScale = instance.getZoom();
+          instance.zoomAtPoint(initialScale * ev.scale, ev.center);
+        }
+
+        instance.zoomAtPoint(initialScale * ev.scale, ev.center);
+      });
+      // Prevent moving the page on some devices when panning over SVG
+      options.svgElement.addEventListener('touchmove', (e) => { e.preventDefault(); });
+    },
+    destroy() {
+      this.hammer.destroy();
+    },
+  };
 
   const zoom = svgPanZoom('#graph > svg', {
     minZoom: 0.1,
     dblClickZoomEnabled: false,
     controlIconsEnabled: true,
-    // zoomEnabled: false,
+    customEventsHandler: eventsHandler,
   });
 
   sizes = zoom.getSizes();
-
-  console.log('bcr', graph.getBoundingClientRect());
-
-  console.log('sizes', zoom.getSizes());
-  console.log('pan', zoom.getPan());
-
-
 
   function updateMinimap() {
     const pan = zoom.getPan();
@@ -231,28 +272,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   zoom.setOnPan(() => {
-    // const zoomRatio = zoom.getZoom();
-    // const aX = -newpan.x / zoomRatio;
-    // const aY = -newpan.y / zoomRatio;
-    // // const bX = aX + container.clientWidth;
-    // // const bY = aY + container.clientHeight;
-
-    // // console.log(`A(${aX.toFixed(2)}, ${aY.toFixed(2)}) B(${bX.toFixed(2)}, ${bY.toFixed(2)})`);
-    // // console.log('zoom', zoom.getZoom());
-    // // console.log('realpan', `x ${-newpan.x / zoom.getZoom()}, y ${-newpan.y / zoom.getZoom()}`);
-
-    // const xPercentage = aX / sizes.width;
-    // const yPercentage = aY / sizes.height;
-
-    // const minimap = document.getElementById('minimap-square');
-    // const minimapWidth = minimap.getAttribute('width');
-    // const minimapHeight = minimap.getAttribute('height');
-
-    // const rect = document.getElementById('minimap-rect');
-    // rect.setAttribute('width', (container.clientWidth / sizes.width) * (minimapWidth / zoom.getZoom()));
-    // rect.setAttribute('height', (container.clientHeight / sizes.height) * (minimapHeight / zoom.getZoom()));
-    // rect.setAttribute('x', xPercentage * minimapWidth);
-    // rect.setAttribute('y', yPercentage * minimapHeight);
     updateMinimap();
   });
 });

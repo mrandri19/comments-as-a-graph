@@ -5,8 +5,8 @@
   },
   "globals": {
     "Viz": false,
-    "thumbnailViewer": false,
-    "svgPanZoom": false
+    "svgPanZoom": false,
+    "Hammer": false
   },
   "rules": {
     "one-var": "off",
