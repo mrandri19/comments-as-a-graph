@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "hammerjs": "^2.0.8",
+    "svg-pan-zoom": "^3.5.3",
     "viz.js": "^1.8.0"
   },
   "devDependencies": {
