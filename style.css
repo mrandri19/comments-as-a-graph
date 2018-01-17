@@ -27,7 +27,7 @@ h1 {
 
 .minimap {
     position: absolute;
-    top: 0;
+    top: 5vh;
     left: 0;
     border: 1px black solid;
 }

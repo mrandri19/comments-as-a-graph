@@ -10,8 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const canvas = document.createElement('canvas');
     canvas.id = 'minimap-canvas';
-    canvas.width = window.innerWidth * 0.25;
-    canvas.height = window.innerWidth * 0.25 * (sizes.height / sizes.width);
+
+    const canvasWidth = (window.innerWidth > 768) ?
+      window.innerWidth * 0.20 :
+      window.innerWidth * 0.475;
+
+    canvas.width = canvasWidth;
+    canvas.height = canvas.width * (sizes.height / sizes.width);
     canvas.classList.add('minimap');
 
     document.getElementById('minimap-container').appendChild(canvas);
@@ -184,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     format: 'svg',
     engine: 'fdp',
   });
+
   const eventsHandler = {
     haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
     init(options) {
@@ -247,12 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const zoomRatio = zoom.getZoom();
     const aX = -pan.x / zoomRatio;
     const aY = -pan.y / zoomRatio;
-    // const bX = aX + container.clientWidth;
-    // const bY = aY + container.clientHeight;
-
-    // console.log(`A(${aX.toFixed(2)}, ${aY.toFixed(2)}) B(${bX.toFixed(2)}, ${bY.toFixed(2)})`);
-    // console.log('zoom', zoom.getZoom());
-    // console.log('realpan', `x ${-newpan.x / zoom.getZoom()}, y ${-newpan.y / zoom.getZoom()}`);
 
     const xPercentage = aX / sizes.width;
     const yPercentage = aY / sizes.height;
