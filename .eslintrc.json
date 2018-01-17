@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "Viz": false,
+    "thumbnailViewer": false,
+    "svgPanZoom": false
+  },
+  "rules": {
+    "one-var": "off",
+    "no-underscore-dangle": "off",
+    "function-paren-newline": "off",
+    "arrow-parens": "off"
+  }
+}

@@ -1,35 +1,51 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const { log } = console
+document.addEventListener('DOMContentLoaded', () => {
+  const graph = document.getElementById('graph');
+  const container = document.getElementById('container');
 
-    const graph = document.getElementById("graph")
-    const container = document.getElementById("container")
+  let sizes;
 
-    // Set up observer to create minimap when the graph is rendered
-    const observer = new MutationObserver(() => {
-        var svgString = new XMLSerializer().serializeToString(document.querySelector('svg'));
+  // Set up observer to create minimap when the graph is rendered
+  const observer = new MutationObserver(() => {
+    const svgString = new XMLSerializer().serializeToString(document.querySelector('#graph > svg'));
 
-        const canvas = document.getElementById("minimap");
-        const ctx = canvas.getContext("2d");
-        const img = new Image();
-        const svg = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
-        const url = URL.createObjectURL(svg);
-        img.onload = function () {
-            ctx.drawImage(img, 0, 0, 300, 150);
-            URL.revokeObjectURL(url)
-        };
-        img.src = url;
+    const canvas = document.createElement('canvas');
+    canvas.id = 'minimap-canvas';
+    canvas.width = 300;
+    canvas.height = 300 * (sizes.height / sizes.width);
+    canvas.classList.add('minimap');
 
+    document.getElementById('minimap-container').appendChild(canvas);
 
-        thumbnailViewer({ mainViewId: 'graph', thumbViewId: 'minimap' });
-    })
-    observer.observe(document.getElementById('graph'), {
-        attributes: true,
-        characterData: true,
-        childList: true
-    })
+    const minimapSquare = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    minimapSquare.id = 'minimap-square';
+    minimapSquare.setAttribute('width', '300');
+    minimapSquare.setAttribute('height', canvas.height);
+    minimapSquare.classList.add('minimap');
 
+    minimapSquare.innerHTML =
+      '<g><rect id="minimap-rect" fill="red" fill-opacity="0.1" stroke="red" stroke-width="2px" x="0" y="0" width="" height="" /></g>';
 
-    const source = `
+    document.getElementById('minimap-container').appendChild(minimapSquare);
+
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    const svg = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(svg);
+
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      URL.revokeObjectURL(url);
+    };
+    img.src = url;
+  });
+
+  observer.observe(graph, {
+    attributes: true,
+    characterData: true,
+    childList: true,
+  });
+
+  const source = `
     graph {
         node [color="#B7C5D9" fillcolor="#d6daf0" fontname="helvetica, open-sans" shape=rectangle style=filled]
         bgcolor="#eef2ff" fontname="helvetica, open-sans" splines=true
@@ -162,21 +178,81 @@ document.addEventListener("DOMContentLoaded", () => {
         42069370 -- 42066736
         42069370 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;42066736  <BR/>  <BR/>That's a lot of information that YOU MADE UP.<BR/></FONT></TD></TR></TABLE>>]
     }
-    
-    `
+    `;
 
-    graph.innerHTML = Viz(source, {
-        format: "svg",
-        engine: "fdp"
-    });
+  graph.innerHTML = Viz(source, {
+    format: 'svg',
+    engine: 'fdp',
+  });
 
-    const zoom = svgPanZoom('#graph > svg', {
-        minZoom: 0.1,
-        dblClickZoomEnabled: false,
-        controlIconsEnabled: true
-    });
+  const zoom = svgPanZoom('#graph > svg', {
+    minZoom: 0.1,
+    dblClickZoomEnabled: false,
+    controlIconsEnabled: true,
+    // zoomEnabled: false,
+  });
+
+  sizes = zoom.getSizes();
+
+  console.log('bcr', graph.getBoundingClientRect());
+
+  console.log('sizes', zoom.getSizes());
+  console.log('pan', zoom.getPan());
 
 
-})
 
+  function updateMinimap() {
+    const pan = zoom.getPan();
+    const zoomRatio = zoom.getZoom();
+    const aX = -pan.x / zoomRatio;
+    const aY = -pan.y / zoomRatio;
+    // const bX = aX + container.clientWidth;
+    // const bY = aY + container.clientHeight;
 
+    // console.log(`A(${aX.toFixed(2)}, ${aY.toFixed(2)}) B(${bX.toFixed(2)}, ${bY.toFixed(2)})`);
+    // console.log('zoom', zoom.getZoom());
+    // console.log('realpan', `x ${-newpan.x / zoom.getZoom()}, y ${-newpan.y / zoom.getZoom()}`);
+
+    const xPercentage = aX / sizes.width;
+    const yPercentage = aY / sizes.height;
+
+    const minimap = document.getElementById('minimap-square');
+    const minimapWidth = minimap.getAttribute('width');
+    const minimapHeight = minimap.getAttribute('height');
+
+    const rect = document.getElementById('minimap-rect');
+    rect.setAttribute('width', (container.clientWidth / sizes.width) * (minimapWidth / zoom.getZoom()));
+    rect.setAttribute('height', (container.clientHeight / sizes.height) * (minimapHeight / zoom.getZoom()));
+    rect.setAttribute('x', xPercentage * minimapWidth);
+    rect.setAttribute('y', yPercentage * minimapHeight);
+  }
+  zoom.setOnZoom(() => {
+    updateMinimap();
+  });
+
+  zoom.setOnPan(() => {
+    // const zoomRatio = zoom.getZoom();
+    // const aX = -newpan.x / zoomRatio;
+    // const aY = -newpan.y / zoomRatio;
+    // // const bX = aX + container.clientWidth;
+    // // const bY = aY + container.clientHeight;
+
+    // // console.log(`A(${aX.toFixed(2)}, ${aY.toFixed(2)}) B(${bX.toFixed(2)}, ${bY.toFixed(2)})`);
+    // // console.log('zoom', zoom.getZoom());
+    // // console.log('realpan', `x ${-newpan.x / zoom.getZoom()}, y ${-newpan.y / zoom.getZoom()}`);
+
+    // const xPercentage = aX / sizes.width;
+    // const yPercentage = aY / sizes.height;
+
+    // const minimap = document.getElementById('minimap-square');
+    // const minimapWidth = minimap.getAttribute('width');
+    // const minimapHeight = minimap.getAttribute('height');
+
+    // const rect = document.getElementById('minimap-rect');
+    // rect.setAttribute('width', (container.clientWidth / sizes.width) * (minimapWidth / zoom.getZoom()));
+    // rect.setAttribute('height', (container.clientHeight / sizes.height) * (minimapHeight / zoom.getZoom()));
+    // rect.setAttribute('x', xPercentage * minimapWidth);
+    // rect.setAttribute('y', yPercentage * minimapHeight);
+    updateMinimap();
+  });
+});

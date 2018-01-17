@@ -25,15 +25,16 @@ h1 {
     overflow: hidden;
 }
 
-#graph {
-    position: relative;
-    top: 0px;
-    left: 0px;
+.minimap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px black solid;
 }
 
-#minimap {
-    z-index: 10;
-    position: absolute;
-    left: 0;
-    right: 0;
+#minimap-square {
+    z-index: 12;
+}
+#minimap-canvas {
+    z-index: 11;
 }
