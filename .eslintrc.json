@@ -12,6 +12,7 @@
     "one-var": "off",
     "no-underscore-dangle": "off",
     "function-paren-newline": "off",
-    "arrow-parens": "off"
+    "arrow-parens": "off",
+    "no-param-reassign": "off"
   }
 }

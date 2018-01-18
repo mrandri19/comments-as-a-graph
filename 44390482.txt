@@ -1,0 +1,43 @@
+graph {
+	node [color="#B7C5D9" fillcolor="#d6daf0" fontname="helvetica, open-sans" shape=rectangle style=filled]
+	bgcolor="#eef2ff" fontname="helvetica, open-sans" splines=true
+	44390482 [color="#B7C5D9" fillcolor="#b7c5d9"]
+	44390482 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Tasty oat recipes? I need to munch down one kg of oat flour every week because<BR/>of reasons...<BR/></FONT></TD></TR></TABLE>>]
+	44390537 -- 44390482
+	44390537 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44390482  <BR/>&gt;one kg a week  <BR/>just eat oats  <BR/>with milk if bulking, water when cutting  <BR/>add fruits for taste<BR/></FONT></TD></TR></TABLE>>]
+	44390541 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I usually top them with blueberries and sliced banana, and additionally<BR/>cinnamon<BR/></FONT></TD></TR></TABLE>>]
+	44390649 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;soak oats in water for 30-60 min to soften them up  <BR/>&gt;cook slowly, add milk if you want, until you reach your desired consistency<BR/>(personally I love me some oat paste)  <BR/>&gt;add a pinch of salt, a tablespoon of honey and a piece of butter (for taste<BR/>and texture)  <BR/>&gt;serve hot  <BR/>  <BR/>enjoy. Another thing you should look into are berry sauces to accompany your<BR/>oatmeal. Scandinavians are masters of that shit and you can't live your life<BR/>without trying some oatmeal with a big piece of butter and a healthy dose of<BR/>blueberry sauce.<BR/></FONT></TD></TR></TABLE>>]
+	44390676 -- 44390537
+	44390676 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44390537  <BR/>/thread  <BR/>oats are fucking delicious, so eat up<BR/></FONT></TD></TR></TABLE>>]
+	44391067 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Thoughts on Cheerios/off brands, stable all day snack or will the added<BR/>vitamins and minerals be too much?<BR/></FONT></TD></TR></TABLE>>]
+	44391085 -- 44391067
+	44391085 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391067  <BR/>i munch on Milo if that's what you're asking.  <BR/>it's the tits.<BR/></FONT></TD></TR></TABLE>>]
+	44391097 -- 44390676
+	44391097 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44390676  <BR/>How are oats delicious?  <BR/>Srs question, they taste like cardboard.<BR/></FONT></TD></TR></TABLE>>]
+	44391182 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Aren't oats supposed to be fast?  <BR/>I put hot water in a cup of oats ,waited a couple of minutes to start<BR/>eating,and it was shit.  <BR/>How can I make fast delicious oats?<BR/></FONT></TD></TR></TABLE>>]
+	44391207 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Oats + Water + Salt + Red Pepper Flakes  <BR/>Or  <BR/>Like rice crispy treats but oats instead.<BR/></FONT></TD></TR></TABLE>>]
+	44391371 -- 44391182
+	44391371 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391182  <BR/>two cups oats  <BR/>banana  <BR/>peanut putter  <BR/>spoonful of cacao powder  <BR/>pinch of salt  <BR/>boil for 5-10min until the banana is just a part of the oatmeal.  <BR/>  <BR/>it tastes like snickers  <BR/>and it's really good if you add nuts and raisins too.  <BR/>Even fresh raspberries.<BR/></FONT></TD></TR></TABLE>>]
+	44391418 -- 44391371
+	44391418 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391371  <BR/>Thanks pal,I get yo at 6 in the morning and i get ready for 10 minutes.  <BR/>I will wake up earlier to do it.  <BR/>If my retarded goats gave milk it would of been even better.  <BR/>I am from Bulgaria so I've never seen peanut butter.  <BR/>Why salt tho?For the electrolites or something like that?<BR/></FONT></TD></TR></TABLE>>]
+	44391470 -- 44391418
+	44391470 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391418  <BR/>&gt;If my retarded goats gave milk it would of been even better.  <BR/>i'm from bulge area too, wanna fight?<BR/></FONT></TD></TR></TABLE>>]
+	44391474 -- 44391418
+	44391474 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391418  <BR/>You don't have peanut butter in bulgaria wtf???  <BR/>That's absolutely retaded.  <BR/>i'd consider making my own peanut butter if i were in your shoes.  <BR/>  <BR/>anyway, reason why pinch of salt is in pic related.<BR/></FONT></TD></TR></TABLE>>]
+	44391511 -- 44391474
+	44391511 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391474  <BR/>Well I've never seen one in person,but I'm sure there are some in the big<BR/>cities.  <BR/>Oh well,thanks for the advice.<BR/></FONT></TD></TR></TABLE>>]
+	44391533 -- 44391470
+	44391533 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391470  <BR/>Well,I had goats before,but now I don't  <BR/>If those fucking goats gave milk,maan.  <BR/>What I live in a small gypsy filled city.  <BR/>But study elsewhere.<BR/></FONT></TD></TR></TABLE>>]
+	44391553 -- 44391470
+	44391553 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391470  <BR/>This was so poorly worded,what the fuck  <BR/>I meant what kind of area do you live in?  <BR/>I live in a little city filled with gypsies.  <BR/>Fuck,but study elsewhere.<BR/></FONT></TD></TR></TABLE>>]
+	44391635 -- 44391553
+	44391635 -- 44391533
+	44391635 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44391553  <BR/>&gt;&gt;44391533  <BR/>I wish I had goats, right now living in a literal Pyce. gypsies are<BR/>unavoidable. not giving more info because now i'm paranoid some /fit/zen wants<BR/>to fight for real<BR/></FONT></TD></TR></TABLE>>]
+	44391690 -- 44390482
+	44391690 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44390482  <BR/>&gt;oats  <BR/>&gt;milk  <BR/>&gt;cinnamon  <BR/>&gt;combine all three in a bowl and eat  <BR/>  <BR/>Absolutely the easiest breakfast around.<BR/></FONT></TD></TR></TABLE>>]
+	44391838 -- 44390482
+	44391838 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44390482  <BR/>  <BR/>I have a 750ml Tupperware beaker with a lockable lid.  <BR/>  <BR/>Oats+milk+yohgurt+pb+honey+chia seeds, mix it up and leave over night in the<BR/>fridge. Its fucking Bueno.<BR/></FONT></TD></TR></TABLE>>]
+	44392436 -- 44390482
+	44392436 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;44390482  <BR/>Why the fuck do you have oat flour?  <BR/>Anyway...  <BR/>&gt;150g oats  <BR/>&gt;400-500ml milk  <BR/>&gt;one grated apple, 2 if small (or 80g of raisins)  <BR/>&gt;combine in a bowl  <BR/>&gt;wait 5 minutes for oats to soften  <BR/>&gt;consume<BR/></FONT></TD></TR></TABLE>>]
+	44393130 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>oats  <BR/>water/milk  <BR/>some honey  <BR/>pinch of salt  <BR/>fruits (optional)<BR/></FONT></TD></TR></TABLE>>]
+}
