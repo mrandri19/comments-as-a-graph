@@ -12,17 +12,37 @@
 <body>
     <header>
         <h1>Comments as a Graph</h1>
+        <a href="https://github.com/mrandri19/comments-as-a-graph">
+            <img src="img/GitHub-Mark-Light-32px.png" alt="" srcset="">
+        </a>
     </header>
 
     <div id='minimap-container'>
     </div>
 
     <div id="container">
+        <div id="loading-js-spinner">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <p>Loading js...</p>
+        </div>
+        <div id="rendering-graph-spinner" style="display: none">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <p>Rendering graph...</p>
+        </div>
         <div id="graph"></div>
     </div>
 
 
-    <script src="node_modules/viz.js/viz.js"></script>
+    <!-- <script src="node_modules/viz.js/viz.js"></script> -->
+    <script src="myviz.min.js"></script>
 
     <script src="node_modules/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
 

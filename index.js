@@ -2,6 +2,7 @@ function render(source) {
   const graph = document.getElementById('graph');
   const container = document.getElementById('container');
 
+
   const eventsHandler = {
     haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
     init(options) {
@@ -52,6 +53,7 @@ function render(source) {
 
   // Set up observer to create minimap when the graph is rendered
   const observer = new MutationObserver(() => {
+
     const zoom = svgPanZoom('#graph > svg', {
       minZoom: 0.1,
       zoomScaleSensitivity: 0.3,
@@ -152,6 +154,8 @@ function render(source) {
     childList: true,
   });
 
+
+
   graph.innerHTML = Viz(source, {
     format: 'svg',
     engine: 'fdp',
@@ -173,7 +177,10 @@ function getParams(query) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('loading-js-spinner').remove();
   const params = getParams(window.location.search);
+  const renderingGraphSpinner = document.getElementById('rendering-graph-spinner');
+  renderingGraphSpinner.style.display = 'initial';
 
   if ('thread' in params) {
     fetch(`${params.thread}.txt`)
@@ -183,7 +190,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         throw new Error(res.status);
       })
-      .then(source => render(source))
+      .then(source => {
+        render(source);
+        renderingGraphSpinner.remove();
+      })
       .catch(err => alert(err));
   } else {
     alert('thread not found in querystring, eg. ?thread=42064745');
