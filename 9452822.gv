@@ -1,0 +1,159 @@
+digraph {
+	node [color="#B7C5D9" fillcolor="#D6DAF0" fontname="helvetica, open-sans" shape=rectangle style=filled]
+	edge [dir=back]
+	bgcolor="#eef2ff" fontname="helvetica, open-sans" splines=true
+	9452841 -> 9452822
+	9452841 -> "it/"
+	9452841 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>[&gt;&gt;&gt;/lit/](/lit/)<BR/></FONT></TD></TR></TABLE>>]
+	9452846 [fillcolor="#B4BD96"]
+	9452846 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>youre mangling notation really badly<BR/></FONT></TD></TR></TABLE>>]
+	9452848 -> 9452822
+	9452848 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>hey OP what is the limit of this sequence? If you need to, feel free to look<BR/>up the definition of a limit.  <BR/>.9, .99, .999, .9999, .99999, ...<BR/></FONT></TD></TR></TABLE>>]
+	9452885 -> 9452848
+	9452885 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452848  <BR/>classical limits are unattainable<BR/></FONT></TD></TR></TABLE>>]
+	9452894 -> 9452885
+	9452894 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452885<BR/></FONT></TD></TR></TABLE>>]
+	9452896 [fillcolor="#B4BD96"]
+	9452896 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>fixed<BR/></FONT></TD></TR></TABLE>>]
+	9452897 -> 9452822
+	9452897 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>Are you fucking serious dude<BR/></FONT></TD></TR></TABLE>>]
+	9452903 -> 9452822
+	9452903 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822<BR/></FONT></TD></TR></TABLE>>]
+	9453113 [fillcolor="#B4BD96"]
+	9453113 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>нeт<BR/></FONT></TD></TR></TABLE>>]
+	9453125 -> 9453113
+	9453125 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453113  <BR/>based<BR/></FONT></TD></TR></TABLE>>]
+	9453127 -> 9453113
+	9453127 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453113  <BR/>But they are at the same point, there's no distance between them.<BR/></FONT></TD></TR></TABLE>>]
+	9453139 -> 9453127
+	9453139 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453127  <BR/>no of course<BR/></FONT></TD></TR></TABLE>>]
+	9453149 -> 9453127
+	9453149 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453127  <BR/>even though the distance between the two points is infinitely small, they are<BR/>still fundamentally separate<BR/></FONT></TD></TR></TABLE>>]
+	9453151 -> 9453149
+	9453151 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453149  <BR/>But they're not.<BR/></FONT></TD></TR></TABLE>>]
+	9453179 -> 9452822
+	9453179 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>Congratulations, you misunderstand convergence. Slap yourself for being<BR/>retarded and then go back to Calc 2.<BR/></FONT></TD></TR></TABLE>>]
+	9453197 [fillcolor="#B4BD96"]
+	9453197 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Reads like something from Professor John Gabriel's chef-d'œuvre  <BR/>https://drive.google.com/file/d/0B-mOEooW03iLd3gyMGlWNk02amM/view<BR/></FONT></TD></TR></TABLE>>]
+	9453200 -> 9452822
+	9453200 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>&gt;not using the cauchy sequence method of proving 0.9 = 1<BR/></FONT></TD></TR></TABLE>>]
+	9453384 -> 9453197
+	9453384 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453197  <BR/>eople from Wikipedia do not agree with you and with him.<BR/></FONT></TD></TR></TABLE>>]
+	9453411 [fillcolor="#B4BD96"]
+	9453411 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>here u go OP  <BR/>[math]  <BR/>.99999... = \lim_{n\to\infty} \sum_{i=1}^{n} \frac{9}{10^{i}} = 1  <BR/>[/math]<BR/></FONT></TD></TR></TABLE>>]
+	9453426 -> 9452896
+	9453426 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452896  <BR/>Thank you<BR/></FONT></TD></TR></TABLE>>]
+	9453434 -> 9452822
+	9453434 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>It's the time of the year when all the calc 2 students are learning seq/series<BR/>and keep making threads about them<BR/></FONT></TD></TR></TABLE>>]
+	9453445 -> 9453149
+	9453445 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453149  <BR/>They are representations, there is no distance between them in the first<BR/>place. Distance is an illusion caused by belief in a number line. Don't fall<BR/>for dogmas children.<BR/></FONT></TD></TR></TABLE>>]
+	9453477 -> 9453411
+	9453477 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453411  <BR/>false<BR/></FONT></TD></TR></TABLE>>]
+	9453482 -> 9453477
+	9453482 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453477  <BR/>thats literally the definition of the decimal expansion of a real number  <BR/>  <BR/>https://en.wikipedia.org/wiki/Decimal_representation<BR/></FONT></TD></TR></TABLE>>]
+	9453486 [fillcolor="#B4BD96"]
+	9453486 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I propose to officially exclude John Gabriel from the scientific community. He<BR/>is engaged in pseudoscience.<BR/></FONT></TD></TR></TABLE>>]
+	9453521 -> 9453384
+	9453521 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453384  <BR/>People from wikipedia don't have PhDs in vector spaces<BR/></FONT></TD></TR></TABLE>>]
+	9453596 -> 9453486
+	9453596 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453486  <BR/>I support your decision.<BR/></FONT></TD></TR></TABLE>>]
+	9453600 -> 9453521
+	9453600 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453521  <BR/>People from Wikipedia are smarter than pseudo-scientist-loser.<BR/></FONT></TD></TR></TABLE>>]
+	9453610 -> 9453521
+	9453610 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453521  <BR/>Source?<BR/></FONT></TD></TR></TABLE>>]
+	9453637 -> 9452885
+	9453637 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452885  <BR/>... for you.<BR/></FONT></TD></TR></TABLE>>]
+	9453661 [fillcolor="#B4BD96"]
+	9453661 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>John Gabriel is not allowed to wear the title of professor.<BR/></FONT></TD></TR></TABLE>>]
+	9453665 -> 9453637
+	9453665 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453637  <BR/>Read the definition of the limits.<BR/></FONT></TD></TR></TABLE>>]
+	9454933 -> 9452822
+	9454933 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>1 = 0,999... + 0,000... ...001<BR/></FONT></TD></TR></TABLE>>]
+	9454938 -> 9454933
+	9454938 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454933  <BR/>Oh so NOW we can count infinite zeroes?<BR/></FONT></TD></TR></TABLE>>]
+	9454944 -> 9454938
+	9454944 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454938  <BR/>it's an infinity between two known points<BR/></FONT></TD></TR></TABLE>>]
+	9454962 -> 9452822
+	9454962 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>This n = 0.000...001 is false.  <BR/>  <BR/>Suppose n = 0.000...001.  <BR/>n + 2 ends in an odd digit.  <BR/>[math]\sqrt{n+2} ends in an odd digit \implies \sqrt{2} ends in an even digit.<BR/>[\math]  <BR/>Clearly contradictory to math done over two thousand years ago and math done<BR/>today.  <BR/>n = 0.000...001 does not end in an odd digit.  <BR/>n is undefined.  <BR/>  <BR/>This is just one of many contradictory results which will always arise when<BR/>inconsistent assumptions are taken.<BR/></FONT></TD></TR></TABLE>>]
+	9454967 -> 9454944
+	9454967 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454944  <BR/>This n = 0.000...001 is false.  <BR/>  <BR/>Suppose n = 0.000...001.  <BR/>n + 2 ends in an odd digit.  <BR/>[math]\sqrt{n+2} ends in an odd digit \implies \sqrt{2} ends in an even digit.<BR/>[/math]  <BR/>Clearly contradictory to math done over two thousand years ago and math done<BR/>today.  <BR/>n = 0.000...001 does not end in an odd digit.  <BR/>n is undefined.  <BR/>  <BR/>This is just one of many contradictory results which will always arise when<BR/>inconsistent assumptions are taken.<BR/></FONT></TD></TR></TABLE>>]
+	9454974 -> 9454967
+	9454974 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454967  <BR/>I don't get this logic t b h<BR/></FONT></TD></TR></TABLE>>]
+	9454993 -> 9454967
+	9454993 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454967  <BR/>Please enlighten me, what is the last digit of sqrt(2)?<BR/></FONT></TD></TR></TABLE>>]
+	9455013 -> 9452822
+	9455013 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>Two numbers are NOT the same if there is SOME finite difference between them.  <BR/>Please show this finite difference.  <BR/>...  <BR/>Can not be done, therefore they are the same number.<BR/></FONT></TD></TR></TABLE>>]
+	9455016 -> 9455013
+	9455016 -> 9454933
+	9455016 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455013  <BR/>see &gt;&gt;9454933<BR/></FONT></TD></TR></TABLE>>]
+	9455022 -> 9455016
+	9455022 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455016  <BR/>FINITE number. That is not a finite number.<BR/></FONT></TD></TR></TABLE>>]
+	9455026 -> 9455022
+	9455026 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455022  <BR/>finite = what has an end<BR/></FONT></TD></TR></TABLE>>]
+	9455028 -> 9454993
+	9455028 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454993  <BR/>It is odd and even whatever it happens to be. A better why of looking at it is<BR/>to say it does not terminate.<BR/></FONT></TD></TR></TABLE>>]
+	9455029 -> 9452896
+	9455029 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452896  <BR/>No you didn't, there are still =/= signs where there should be = signs.<BR/></FONT></TD></TR></TABLE>>]
+	9455035 -> 9453149
+	9455035 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453149  <BR/>Saying that .9 repeating is not the same as 1 is as retarded as claiming that<BR/>.5 and 1/2 are different numbers because "HUR DUR 5 IS NOT THA SAM AS 1 AND 2<BR/>HAHA DUR I SO SMRT!!!!1!ONE!!111!!"  <BR/>  <BR/>.9 repeating and 1 are different representations of the same number. There is<BR/>no reasonable argument to the contrary. You are wrong. Get over it. Accept<BR/>that math is not your calling in life.<BR/></FONT></TD></TR></TABLE>>]
+	9455038 -> 9453521
+	9455038 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453521  <BR/>Neither do you if you think 1 =/= .999...<BR/></FONT></TD></TR></TABLE>>]
+	9455039 -> 9455026
+	9455039 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455026  <BR/>finite does NOT equal what has an end!  <BR/>one third is a finite number with an infinite number of digits needed to<BR/>represent it.<BR/></FONT></TD></TR></TABLE>>]
+	9455042 -> 9454933
+	9455042 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454933  <BR/>Wrong. The ellipses at the end of the 9 means that there are an INFINITE<BR/>number of nines. That 0.000...001 retardation means that there are a FINITE<BR/>number of zeros between the decimal point and 1.  <BR/>You fail, go back to whatever shithole in Europe you came from.<BR/></FONT></TD></TR></TABLE>>]
+	9455046 -> 9454944
+	9455046 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9454944  <BR/>That's not what was fucking written. It's not infinite just because you're<BR/>dumb enough to think it is.<BR/></FONT></TD></TR></TABLE>>]
+	9455053 -> 9455046
+	9455053 -> 9455042
+	9455053 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455046  <BR/>&gt;&gt;9455042  <BR/>what's the smallest possible number<BR/></FONT></TD></TR></TABLE>>]
+	9455054 -> 9452822
+	9455054 -> 9452896
+	9455054 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9452822  <BR/>&gt;&gt;9452896  <BR/>0.9+0.09+... denotes a LIMIT  <BR/>It's MEANINGLESS otherwise. You can't add an infinite infinite amount of<BR/>numbers.  <BR/>This means, that by definition 0.9+0.09+...= limit(partial sums) = 1<BR/></FONT></TD></TR></TABLE>>]
+	9455067 -> 9455054
+	9455067 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455054  <BR/>&gt;You can't add an infinite infinite amount of numbers.  <BR/>wrong<BR/></FONT></TD></TR></TABLE>>]
+	9455073 -> 9455054
+	9455073 -> 9455067
+	9455073 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455054  <BR/>&gt;&gt;9455067  <BR/>Also, let me add into it.  <BR/>You can not only add an infinite amount of numbers into this, but as you are<BR/>only adding nines into it, you know for sure that the end of it is 9  <BR/>So, just imagine you are "fast-forwarding", warping, into the end of this<BR/>number, you can only see nines.  <BR/>so 0,999... 999.<BR/></FONT></TD></TR></TABLE>>]
+	9455104 [fillcolor="#B4BD96"]
+	9455104 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>if we just swapped to using base .999— instead of base 10 we wouldn’t have<BR/>this issue<BR/></FONT></TD></TR></TABLE>>]
+	9455135 -> 9455073
+	9455135 -> 9455073
+	9455135 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455073  <BR/>&gt;&gt;9455073  <BR/>Again, you can't know for sure it is a 9. That is still an assumption.  <BR/>  <BR/>Suppose:  <BR/>[math] n=\lim_{x\to\infty} \dfrac{10^x-1}{10^x}=0.99...9\\\  <BR/>m=\lim_{x\to\infty} \dfrac{10^x-2}{10^x}=0.99...8\\\  <BR/>s=\lim_{x\to\infty} \dfrac{n-m}{10^x}=0.00...1\\\  <BR/>[/math]  <BR/>s is undefined because it defines the terminating digit of an irrational<BR/>number as even or odd. m or n(or both) is an inconsistent definition.<BR/></FONT></TD></TR></TABLE>>]
+	9455144 -> 9455135
+	9455144 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455135  <BR/>Correction:  <BR/>s = n - m = 0.00...1  <BR/>(Although in either instance s is the same)<BR/></FONT></TD></TR></TABLE>>]
+	9455146 -> 9455135
+	9455146 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455135  <BR/>your supposition is exactly what I'm saying it is  <BR/>is it that impossible? why can't it ever be like this?<BR/></FONT></TD></TR></TABLE>>]
+	9455149 -> 9455146
+	9455149 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455146  <BR/>My idea is that it is inconsistent or contradictory. Not sure if that is what<BR/>you were saying or not.<BR/></FONT></TD></TR></TABLE>>]
+	9455164 -> 9455149
+	9455164 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455149  <BR/>I'm saying the very basic axioms are wrong on this and 0,000...1 is a real<BR/>number. Also 0,999...9 is a number.<BR/></FONT></TD></TR></TABLE>>]
+	9455171 -> 9453482
+	9455171 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453482  <BR/>this<BR/></FONT></TD></TR></TABLE>>]
+	9455176 [fillcolor="#B4BD96"]
+	9455176 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>fuck all you stupids  <BR/>  <BR/>.9 repeating = 1  <BR/>  <BR/>.000...001 doesn't fucking exist, it isn't even well defined in the hyper<BR/>reals  <BR/>  <BR/>.3 repeating = 1  <BR/>  <BR/>and yes, = equals, not some gay fucking arrow<BR/></FONT></TD></TR></TABLE>>]
+	9455195 -> 9455164
+	9455195 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455164  <BR/>If you chose to define the number that way, then we have to say  <BR/>0.333...3 = 1/3  <BR/>3(1/3) = 1 = 0.999...9  <BR/>1-0.999...9 = 0.000...1 = 0.000...0  <BR/>  <BR/>Technically, under this definition having n+0.000...0 OR n+0.000...1 is the<BR/>next largest number after n. The additive identity element, "0", becomes very<BR/>muddy in this choice.<BR/></FONT></TD></TR></TABLE>>]
+	9455205 -> 9455195
+	9455205 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455195  <BR/>but it's not 0,333...3  <BR/>it's something bigger than that, but smaller than an ending 4.  <BR/>it can't be represented like that, but it can by saying 1/3<BR/></FONT></TD></TR></TABLE>>]
+	9455231 -> 9455205
+	9455231 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455205  <BR/>You would be defining a different set of numbers using different axioms.<BR/></FONT></TD></TR></TABLE>>]
+	9455250 -> 9455231
+	9455250 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455231  <BR/>a different set than the current in use or the one we are talking? I don't see<BR/>why it can't be like that, it's just that some numbers cannot be represented,<BR/>0,999... not being one of them<BR/></FONT></TD></TR></TABLE>>]
+	9455328 -> 9455250
+	9455328 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455250  <BR/>there don't exist Real numbers that differ at an infinitely far away decimal.<BR/>All numbers can be represented since the Real numbers are complete  <BR/>  <BR/>https://en.wikipedia.org/wiki/Completeness_of_the_real_numbers<BR/></FONT></TD></TR></TABLE>>]
+	9455364 -> 9455205
+	9455364 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455205  <BR/>yeah, I'm believing Wolfram|Alpha over a random 4chan shitposter  <BR/>https://www.wolframalpha.com/input/?i=(0.333...)+-1%2F3<BR/></FONT></TD></TR></TABLE>>]
+	9455443 [fillcolor="#B4BD96"]
+	9455443 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>okay, faggots, if you think you are so smart, and think those are two<BR/>different real number, there must be numbers between them  <BR/>give me a decimal representation of any number you want between 0.9999.... and<BR/>1.000...  <BR/>1.999....5 is not a valid candidate because you can't do that in real numbers,<BR/>that is, say there's an infinite sequence of numbers which somehow ends in a<BR/>different number  <BR/>0.9999..... is not 0.999....9, because the sequence doesn't end  <BR/>fuck off<BR/></FONT></TD></TR></TABLE>>]
+	9455525 -> 9455035
+	9455525 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455035  <BR/>Are you ready to be wrong?  <BR/>  <BR/>1-epsilon equals .9 repeating  <BR/>  <BR/>  <BR/>Therefore 1 cant be .9 repeating or epsilon is 0. It isnt.<BR/></FONT></TD></TR></TABLE>>]
+	9455545 -> 9455053
+	9455545 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455053  <BR/>Reals are Archimedean, so there are no infinitely small not infinitely big<BR/>numbers, that is numbers smaller or bigger than any other real number<BR/></FONT></TD></TR></TABLE>>]
+	9455551 -> 9453477
+	9455551 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453477  <BR/>&gt;false<BR/></FONT></TD></TR></TABLE>>]
+	9455566 -> 9453665
+	9455566 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9453665  <BR/>limits are not defined as "attainable"<BR/></FONT></TD></TR></TABLE>>]
+	9455585 -> 9455545
+	9455585 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;9455545  <BR/>is 0,000... = 0?<BR/></FONT></TD></TR></TABLE>>]
+}

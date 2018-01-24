@@ -53,7 +53,6 @@ function render(source) {
 
   // Set up observer to create minimap when the graph is rendered
   const observer = new MutationObserver(() => {
-
     const zoom = svgPanZoom('#graph > svg', {
       minZoom: 0.1,
       zoomScaleSensitivity: 0.3,
@@ -154,8 +153,6 @@ function render(source) {
     childList: true,
   });
 
-
-
   graph.innerHTML = Viz(source, {
     format: 'svg',
     engine: 'fdp',
@@ -182,20 +179,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const renderingGraphSpinner = document.getElementById('rendering-graph-spinner');
   renderingGraphSpinner.style.display = 'initial';
 
-  if ('thread' in params) {
-    fetch(`${params.thread}.txt`)
-      .then(res => {
-        if (res.ok) {
-          return res.text();
-        }
-        throw new Error(res.status);
-      })
-      .then(source => {
-        render(source);
-        renderingGraphSpinner.remove();
-      })
-      .catch(err => alert(err));
-  } else {
-    alert('thread not found in querystring, eg. ?thread=42064745');
+  if (!('thread' in params)) {
+    params.thread = '64429683';
+    console.log(`No thread=THREAD_ID found in params, using default: ${params.thread}`);
   }
+  fetch(`${params.thread}.gv`)
+    .then(res => {
+      if (res.ok) {
+        return res.text();
+      }
+      throw new Error(res.status);
+    })
+    .then(source => {
+      render(source);
+      renderingGraphSpinner.remove();
+    })
+    .catch(err => alert(err));
 });

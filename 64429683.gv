@@ -1,0 +1,174 @@
+digraph {
+	node [color="#B7C5D9" fillcolor="#D6DAF0" fontname="helvetica, open-sans" shape=rectangle style=filled]
+	edge [dir=back]
+	bgcolor="#eef2ff" fontname="helvetica, open-sans" splines=true
+	64429683 [fillcolor="#F2C4B5"]
+	64429683 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>How do we feel about passively cooled (gaming) PCs?<BR/></FONT></TD></TR></TABLE>>]
+	64429707 -> 64429683
+	64429707 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>Looks interesting but when are they releasing this fucker? They redesigned it<BR/>like three times already.<BR/></FONT></TD></TR></TABLE>>]
+	64429768 -> 64429683
+	64429768 -> "/"
+	64429768 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>&gt;How do we feel about passively cooled (gaming) PCs?  <BR/>The same as we feel about all (((gaming))) PCs. [&gt;&gt;&gt;/v/](/v/)<BR/></FONT></TD></TR></TABLE>>]
+	64429781 [fillcolor="#B4BD96"]
+	64429781 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>It's dumb and looks like gaymer shit<BR/></FONT></TD></TR></TABLE>>]
+	64429782 -> 64429683
+	64429782 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>Why not at least put a slow fan in it? That way hot air won't stagnate and you<BR/>don't need to design this silly open-top case that will get dusty in about 0.1<BR/>seconds.<BR/></FONT></TD></TR></TABLE>>]
+	64429798 [fillcolor="#B4BD96"]
+	64429798 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;Phase Change Cooling  <BR/>&gt;Passive<BR/></FONT></TD></TR></TABLE>>]
+	64429805 -> 64429683
+	64429805 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>I expect that to be expensive and less flexible than a normal case in terms of<BR/>what hardware you can have, like what happens if the CPU cooling block is not<BR/>compatible with some new socket? I don't value absolute quiet to such a degree<BR/>that I'd sacrifice upgrade capacity and buy something more expensive.<BR/></FONT></TD></TR></TABLE>>]
+	64429809 -> 64429683
+	64429809 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>&gt;How do we feel about passively cooled (gaming) PCs?  <BR/>&gt;we  <BR/>/g/ has many opinions, as for I, I would be interested if only they were more<BR/>capable at cooling. More often then not they cool about as well as stock fans<BR/>(if not worse), so I usually don't care much about them. Completely silent<BR/>builds are the epitome of autism, and completely caked with delusion.<BR/></FONT></TD></TR></TABLE>>]
+	64429815 -> 64429782
+	64429815 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429782  <BR/>&gt;Why not at least put a slow fan in it?  <BR/>For the noise.<BR/></FONT></TD></TR></TABLE>>]
+	64429822 -> 64429707
+	64429822 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429707  <BR/>looks like it needs at least another 3 redesigns<BR/></FONT></TD></TR></TABLE>>]
+	64429833 -> 64429768
+	64429833 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429768  <BR/>You look lost, let me help you on your way: &gt;&gt;/reddit/<BR/></FONT></TD></TR></TABLE>>]
+	64429838 -> 64429683
+	64429838 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>Why bother?  <BR/>Just use a couple of 800rpm fans if you're so desperate for silence.<BR/></FONT></TD></TR></TABLE>>]
+	64429861 -> 64429809
+	64429861 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429809  <BR/>&gt;Completely silent builds are the epitome of autism  <BR/>*looks over at sff completely passive build*  <BR/>listen here you lil shit<BR/></FONT></TD></TR></TABLE>>]
+	64429863 -> 64429815
+	64429863 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429815  <BR/>That's why it's a slow fan. They make virtually no noise and make cooling<BR/>vastly more simple.<BR/></FONT></TD></TR></TABLE>>]
+	64429881 -> 64429863
+	64429881 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429863  <BR/>&gt;slow fan  <BR/>&gt;virtually no noise  <BR/>&gt;virtually  <BR/>and I'm sure you """virtually""" have a qt 3.14 waifu, but it's not exactly<BR/>the same as the real thing now, is it?<BR/></FONT></TD></TR></TABLE>>]
+	64429888 -> 64429881
+	64429888 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429881  <BR/>lel<BR/></FONT></TD></TR></TABLE>>]
+	64429904 -> 64429782
+	64429904 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429782  <BR/>&gt;silly open-top case that will get dusty in about 0.1 seconds.  <BR/>man, I guess there's no way to prevent rain from getting in chimneys too  <BR/>if only we had the technology<BR/></FONT></TD></TR></TABLE>>]
+	64429916 -> 64429881
+	64429916 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429881  <BR/>&gt;0dB autism  <BR/>When you have to lean into your computer to hear any sound it's as good as<BR/>silent.  <BR/>Having a qtπ waifu and not having a qtπ waifu is an absolute binary whereas<BR/>there is a range of "silent enough" noise levels above 0<BR/></FONT></TD></TR></TABLE>>]
+	64429920 -> 64429861
+	64429920 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429861  <BR/>Specs?<BR/></FONT></TD></TR></TABLE>>]
+	64429921 -> 64429861
+	64429921 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429861  <BR/>&gt;*looks over at sff completely passive build*  <BR/>&gt;listen here you lil shit  <BR/>Lel your build would cool better if you put a fan on it, and you most likely<BR/>wouldn't hear the sound over your mouth breathing anyways.<BR/></FONT></TD></TR></TABLE>>]
+	64429935 -> 64429921
+	64429935 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429921  <BR/>&gt;you most likely wouldn't hear the sound over your mouth breathing anyways.  <BR/>you're underestimating my ninja mouthbreathing skills nigga  <BR/>if the box is louder than my heartbeat, it's a no go<BR/></FONT></TD></TR></TABLE>>]
+	64429945 -> 64429935
+	64429945 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429935  <BR/>Then why aren't you ninja mouthbreathing over coil whine and other sounds that<BR/>come out of “““silent””” computers?<BR/></FONT></TD></TR></TABLE>>]
+	64429964 -> 64429945
+	64429964 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429945  <BR/>&gt;coil whine  <BR/>GRARLARGH  <BR/>don't remind me  <BR/>that's why the *external* PSU (extra-fat laptop-like) is chucked behind the<BR/>desk to make it inaudible in *most* scenarios  <BR/>can't have anything overshadowing my glorious tinnitus<BR/></FONT></TD></TR></TABLE>>]
+	64429966 -> 64429683
+	64429966 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>I can barely hear my fans already, even my PSU reduces rotation under low<BR/>load.  <BR/>  <BR/>When I'm gaming it doesn't matter because I'm using headphones.  <BR/>  <BR/>I can't see the point unless it's a recording studio/lab scenario<BR/></FONT></TD></TR></TABLE>>]
+	64429974 -> 64429861
+	64429974 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429861  <BR/>&gt;*looks over at sff completely passive build*  <BR/>speccs?  <BR/>&gt;inb4 silent pc with spinning hardrives, a disc drive, and a mechanical<BR/>keyboard.<BR/></FONT></TD></TR></TABLE>>]
+	64429995 -> 64429974
+	64429995 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429974  <BR/>&gt;spinning hardrives  <BR/>what is this, amateur hour? ssd or bust  <BR/>&gt;a disc drive  <BR/>$currant jahr  <BR/>&gt;and a mechanical keyboard  <BR/>eh, fell for the meme for a while (mx blues, obviously), fell out of it and<BR/>back to stuff with more efficient travel distances<BR/></FONT></TD></TR></TABLE>>]
+	64430238 [fillcolor="#B4BD96"]
+	64430238 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Dust magnets<BR/></FONT></TD></TR></TABLE>>]
+	64430292 -> 64430238
+	64430292 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430238  <BR/>&gt;&gt;expensive door stopper  <BR/>&gt;dust magnet  <BR/>&gt;&gt;actual vacuum cleaner, including dust stoppers  <BR/>&gt;nah m8 no dust here<BR/></FONT></TD></TR></TABLE>>]
+	64430311 -> 64429683
+	64430311 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>Nigger, I can't sleep anymore if I don't hear the quiet drone of my computer's<BR/>fans.  <BR/>  <BR/>What kind of faggot are you?<BR/></FONT></TD></TR></TABLE>>]
+	64430412 -> 64430311
+	64430412 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430311  <BR/>sorry about your brain damage<BR/></FONT></TD></TR></TABLE>>]
+	64430420 -> 64429683
+	64430420 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>if they can keep my dinner warm then i'm sold<BR/></FONT></TD></TR></TABLE>>]
+	64430431 -> 64430420
+	64430431 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430420  <BR/>&gt;places cuppa precariously on top of box  <BR/>&gt;spills it while spazzing out due to gaymes  <BR/>&gt;mummy I made a boo boo<BR/></FONT></TD></TR></TABLE>>]
+	64430506 -> 64429683
+	64430506 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>Kind of dumb, considering what even a very small amount of forced airflow can<BR/>accomplish in comparison, while still being basically inaudible.<BR/></FONT></TD></TR></TABLE>>]
+	64430514 [fillcolor="#B4BD96"]
+	64430514 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>My Raspberry Pi is passively cooled and plays Chrono Trigger.<BR/></FONT></TD></TR></TABLE>>]
+	64430540 -> 64430506
+	64430540 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430506  <BR/>&gt;very small amount of forced airflow  <BR/>&gt;basically inaudible.  <BR/>and a very small amount of bullet going through your cartoid is "basically<BR/>harmless"<BR/></FONT></TD></TR></TABLE>>]
+	64430556 [fillcolor="#B4BD96"]
+	64430556 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I think it's pointless. The last step from 'very little noise' to 'completely<BR/>silent' introduces more problems than it's worth.<BR/></FONT></TD></TR></TABLE>>]
+	64430567 -> 64430556
+	64430567 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430556  <BR/>&gt;The last step from 'very little noise' to 'completely silent' introduces more<BR/>problems  <BR/>oh man, guess smartphones will never succeed then  <BR/>who knew aplel, samshit and jewgle were this retarded<BR/></FONT></TD></TR></TABLE>>]
+	64430594 -> 64429781
+	64430594 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429781  <BR/>this<BR/></FONT></TD></TR></TABLE>>]
+	64430619 -> 64430567
+	64430619 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430567  <BR/>Are you brain damaged? Phone tdp is orders of magnitude smaller than desktop<BR/>components tdp.<BR/></FONT></TD></TR></TABLE>>]
+	64430646 -> 64430619
+	64430646 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430619  <BR/>are you?  <BR/>95% of the time your average normie workload can be done with phone-level tdp,<BR/>even on shit inefficient architectures like x86<BR/></FONT></TD></TR></TABLE>>]
+	64430666 -> 64430567
+	64430666 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430567  <BR/>With 'more problems' I meant exactly that. Phone CPUs have around 2-5 W tdp.<BR/></FONT></TD></TR></TABLE>>]
+	64430692 -> 64429683
+	64430692 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>that's phase change cooling, you drooling imbecilic twat  <BR/>  <BR/>it says right fucking there, in your image  <BR/>  <BR/>PHASE CHANGE COOLING  <BR/>  <BR/>how fucking dense do you have to be to mistake phase change cooling to passive<BR/>cooling? are both of your parents mentally challenged? are they related? are<BR/>they both related to each other while being mentally challenged? you sniveling<BR/>brainlet dumbass retard and a moron. you fucking degenerate imbecile. IT'S<BR/>PHASE CHANGE COOLING  <BR/>  <BR/>if stupidity was a crime you'd receive death penalty by a firing squad<BR/></FONT></TD></TR></TABLE>>]
+	64430696 -> 64430666
+	64430696 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430666  <BR/>multi-core beefy desktop CPUs can downscale to where they can be passively<BR/>cooled by e.g. picrel<BR/></FONT></TD></TR></TABLE>>]
+	64430705 -> 64430692
+	64430705 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430692  <BR/>still silent (no noise-producing movement), you autist<BR/></FONT></TD></TR></TABLE>>]
+	64430718 -> 64430692
+	64430718 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430692  <BR/>Contain your nerdrage, Sheldon.<BR/></FONT></TD></TR></TABLE>>]
+	64430735 -> 64429904
+	64430735 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429904  <BR/>How do they stop that? I am wondering.<BR/></FONT></TD></TR></TABLE>>]
+	64430743 -> 64430705
+	64430743 -> 64430718
+	64430743 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430705  <BR/>&gt;haha i win an argument by false analogy!  <BR/>  <BR/>fucking braindead dipshit  <BR/>  <BR/>&gt;&gt;64430718  <BR/>&gt;haha i win an argument by ad hominem  <BR/>  <BR/>another braindead dipshit<BR/></FONT></TD></TR></TABLE>>]
+	64430766 -> 64430735
+	64430766 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430735  <BR/>same way you prevent rain from falling on your head  <BR/>put something above it<BR/></FONT></TD></TR></TABLE>>]
+	64430769 [fillcolor="#B4BD96"]
+	64430769 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Well, this could be passively cooled with little effort. Add a GT 1030 and one<BR/>of those passive Seasonic PSU and you've got a passively cooled gaming PC.<BR/>Isn't this exclusively for laptops though?<BR/></FONT></TD></TR></TABLE>>]
+	64430772 -> 64430743
+	64430772 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430743  <BR/>ooh that deflection  <BR/>hit a nerve, eh?<BR/></FONT></TD></TR></TABLE>>]
+	64430783 -> 64430769
+	64430783 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430769  <BR/>&gt;1.3 GHz  <BR/>pfft, weak shit  <BR/>no need to cripple yourself that much  <BR/>you can get proper desktop 65W TDP CPUs cooled passively no problem  <BR/>that's what I'm running, after all<BR/></FONT></TD></TR></TABLE>>]
+	64430810 -> 64430783
+	64430810 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430783  <BR/>Are you passively cooling 65W?<BR/></FONT></TD></TR></TABLE>>]
+	64430834 [fillcolor="#B4BD96"]
+	64430834 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>It makes me feel hot<BR/></FONT></TD></TR></TABLE>>]
+	64430850 -> 64430810
+	64430850 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430810  <BR/>you realize 65W refers to the TDP, right? as in, not the constant heat output?  <BR/>&gt;The thermal design power (TDP), sometimes called thermal design point, is the<BR/>maximum amount of heat generated by a computer chip or component that the<BR/>cooling system in a computer is designed to dissipate under any workload. The<BR/>TDP is typically not the largest amount of heat the CPU could ever generate<BR/></FONT></TD></TR></TABLE>>]
+	64430880 -> 64430810
+	64430880 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430810  <BR/>http://www.streacom.com/products/fc8-fanless-chassis/ (specs tab)  <BR/>&gt;Cooling: Passive Heatpipe Solution – Recommended CPU Thermal Design Power:<BR/>65W<BR/></FONT></TD></TR></TABLE>>]
+	64430903 -> 64430540
+	64430903 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430540  <BR/>If the "bullet" is actually small enough - as in, microscopic - you're<BR/>correct.<BR/></FONT></TD></TR></TABLE>>]
+	64430921 -> 64429881
+	64430921 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429881  <BR/>&gt;what is Coil Whine  <BR/>  <BR/>Your '0dB' tower sure makes no noise  <BR/>  <BR/>Your 0dB eardrums won't pick up thunder either<BR/></FONT></TD></TR></TABLE>>]
+	64430931 -> 64430921
+	64430931 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430921  <BR/>&gt;well there will always be some crime, makes no sense to fight crime at all, I<BR/>guess  <BR/>dumbass  <BR/>I'm well aware of coil whine  <BR/>but I prefer having only coil whine to take care of, instead of coil whine AND<BR/>HDD noise AND fan noise<BR/></FONT></TD></TR></TABLE>>]
+	64430977 -> 64430931
+	64430977 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430931  <BR/>fun fact, the sound produced by coil whine can get cancelled out by a low,<BR/>oscillating fan noise if you're lucky :o)))<BR/></FONT></TD></TR></TABLE>>]
+	64430985 -> 64430769
+	64430985 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430769  <BR/>You can easily passive cool a dualcore i3/p4560 on a hyper 212 evo without a<BR/>fan in OCCT under 80degrees, I assume you could do the same with somethings<BR/>like r3 1200 with a bigger tower or an actual cooler designed for passive<BR/>cooling. You better don't live down south though.  <BR/>  <BR/>You'll br fucked by coilwhine anyway. I've switched multiple GPUs and every<BR/>single one of them since 2010 coil whined, same with PSUs, some whine under<BR/>load, others amplify the whine of other components, mostly GPU, but all of<BR/>them whine to some degree. I laugh at audiophiles who can't even hear their<BR/>macbooks screech.<BR/></FONT></TD></TR></TABLE>>]
+	64430997 -> 64430977
+	64430997 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430977  <BR/>&gt;if you're lucky  <BR/>and if I'm equally lucky, the winnings from the next lottery ticket will<BR/>totally cancel out the losses from the last hundred<BR/></FONT></TD></TR></TABLE>>]
+	64431006 -> 64429683
+	64431006 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64429683  <BR/>Do they come in white ?<BR/></FONT></TD></TR></TABLE>>]
+	64431009 -> 64430985
+	64431009 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430985  <BR/>&gt;You'll br fucked by coilwhine anyway.  <BR/>Still a smaller problem than coil whine AND fan noise, no?  <BR/>E.g. I can chuck my (separate, laptop-like) coil whining shit PSU behind a<BR/>desk and get proper silence in 90% of the room volume  <BR/>can't do that with a fan-cooled box tho<BR/></FONT></TD></TR></TABLE>>]
+	64431021 -> 64431006
+	64431021 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431006  <BR/>equally good for hanging your socks to dry<BR/></FONT></TD></TR></TABLE>>]
+	64431088 [fillcolor="#B4BD96"]
+	64431088 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>the answer is passive heatsinks for the components and large case fans<BR/></FONT></TD></TR></TABLE>>]
+	64431104 -> 64430977
+	64431104 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430977  <BR/>No it can't.The difference in frequency is too high, or rather, it's just<BR/>there. Canceling out a sound wave requires that its frequency be matched<BR/>perfectly by an opposite amplitude soundwave. It needs to be perfect, or it's<BR/>just adding to the noise.<BR/></FONT></TD></TR></TABLE>>]
+	64431125 -> 64430766
+	64431125 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430766  <BR/>What if wind pushes it by the side?<BR/></FONT></TD></TR></TABLE>>]
+	64431178 -> 64431104
+	64431178 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431104  <BR/>t. not a certified anime wave scientist<BR/></FONT></TD></TR></TABLE>>]
+	64431277 -> 64431009
+	64431277 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431009  <BR/>Fan noise is lower frequency=less irritating than coil whine. You always get<BR/>coil whine from GPU, motherboard, sound card etc, but if it gets drowned out<BR/>by the fans, it's not as irritating. The sound does travel futher though, so<BR/>if you keep your tower on the other side of the room, it should be fine<BR/>passive with extensions for kb/m and monitor. Fun fact, your monitor also<BR/>whines.<BR/></FONT></TD></TR></TABLE>>]
+	64431315 [fillcolor="#B4BD96"]
+	64431315 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Gimmick, the advantage of even slight airflow far exceeds the minimal noise<BR/>made by a quality fan, especially in PCs where there's no issues with space<BR/></FONT></TD></TR></TABLE>>]
+	64431342 -> 64431277
+	64431342 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431277  <BR/>&gt;You always get [audible] coil whine from GPU, motherboard, sound card etc  <BR/>wrong  <BR/>\- laptop currently on my lap is completely passive, no audible coil whine  <BR/>\- desktop sitting a foot away from my ear is completely passive, no audible<BR/>coil whine  <BR/>\- desktop PSU is behind the desk, because it's a chink piece of shit that<BR/>didn't do enough to minimize coil whine, so there's a bit of a noise during<BR/>certain workloads. Counteracted by it being behind the desk.<BR/></FONT></TD></TR></TABLE>>]
+	64431350 -> 64430772
+	64431350 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430772  <BR/>ye but ur still a prick<BR/></FONT></TD></TR></TABLE>>]
+	64431354 -> 64431315
+	64431354 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431315  <BR/>&gt;advantage of even slight airflow far exceeds the minimal noise made by a<BR/>quality fan  <BR/>depends on your priorities m8  <BR/>some people weigh annoyance by noise more than the few extra degrees that you<BR/>maintain in a passive case 95% of the time  <BR/>different strokes for different folks, as usual<BR/></FONT></TD></TR></TABLE>>]
+	64431359 -> 64431277
+	64431359 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431277  <BR/>fan noise is made by the fan blades cutting the air. at some point the drag at<BR/>the tips start to cancel out the airflow and just make more noise. the bigger<BR/>the fan the slower it can move to push the same amount of air and the less<BR/>noise it makes. a good 120mm case fan is pretty much inaudible.<BR/></FONT></TD></TR></TABLE>>]
+	64431372 -> 64431354
+	64431372 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431354  <BR/>Sure, but I have serious doubts whether a large diameter fan at low RPM is<BR/>even audible to most people<BR/></FONT></TD></TR></TABLE>>]
+	64431422 -> 64431372
+	64431422 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431372  <BR/>&gt;most people  <BR/>key point, which is why I said  <BR/>&gt;different strokes for different folks, as usual  <BR/>did the whole 120+mm shtick, meme name "silent" fans, low RPMs and stuff  <BR/>still prefer a completely silent experience  <BR/>  <BR/>that's just my choice tho, others will prefer different trade-offs, might not<BR/>hear the noise, might not care, might prefer it, might need more perf, etc<BR/></FONT></TD></TR></TABLE>>]
+	64431462 -> 64430692
+	64431462 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430692  <BR/>It's passive phase change<BR/></FONT></TD></TR></TABLE>>]
+	64431528 -> 64430692
+	64431528 -> 64431462
+	64431528 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64430692  <BR/>Lel BTFO &gt;&gt;64431462<BR/></FONT></TD></TR></TABLE>>]
+	64431624 -> 64431372
+	64431624 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431372  <BR/>Bigger rotor, bearings equals more friction and induction noise. It's not<BR/>really audible though, I have a 380 24V steel car fan and nothing else but<BR/>bare heatsinks, my westmare xeon runs at 4.2ghz 65°C at like 1.4V for<BR/>stresstest with almost no sound. I have a fuckhuge 85w passive cooler on the<BR/>cpu though.<BR/></FONT></TD></TR></TABLE>>]
+	64431711 -> 64431462
+	64431711 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431462  <BR/>How is phase change passive?<BR/></FONT></TD></TR></TABLE>>]
+	64431723 -> 64431624
+	64431723 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431624  <BR/>&gt;380 24V steel car fan  <BR/>&gt;fuckhuge 85w passive cooler on the cpu  <BR/>pics?<BR/></FONT></TD></TR></TABLE>>]
+	64431873 -> 64431711
+	64431873 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;&gt;64431711  <BR/>nigger are you fucking stupid? it's just heatpipes<BR/></FONT></TD></TR></TABLE>>]
+	64431990 [fillcolor="#B4BD96"]
+	64431990 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I always have a fan running near my PC just to keep air moving, and it's quite<BR/>loud  <BR/>I can't even hear my desktop at full load since it's under my desk<BR/></FONT></TD></TR></TABLE>>]
+}
