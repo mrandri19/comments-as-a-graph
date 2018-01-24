@@ -17,4 +17,4 @@ The frontend's js loads the `.gv` file and displays it using [viz.js](https://gi
 custom compiled (via emscripten) to shrink it to 1.8MB instead of 2.4MB.
 
 The panning and zooming is provided by [svg-pan-zoom](https://github.com/ariutta/svg-pan-zoom) and the minimap was implemented
-by me by rendering the svg graph to a canvas.
+by rendering the svg graph to a canvas.
