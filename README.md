@@ -1,6 +1,9 @@
 # comments-as-a-graph
 Read [4chan](https://www.4chan.org) and [reddit](https://www.reddit.com/) (coming soon) comments using a graph visualization.
 
+## Try reddit
+- [`Chrome 64 - What's New in DevTools`](https://mrandri19.github.io/comments-as-a-graph/?thread=reddit)
+
 ## Try other threads
 - [`42064745`](https://mrandri19.github.io/comments-as-a-graph/?thread=42064745)
 - [`44390482`](https://mrandri19.github.io/comments-as-a-graph/?thread=44390482)
