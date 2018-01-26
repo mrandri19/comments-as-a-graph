@@ -4,10 +4,10 @@ Read [4chan](https://www.4chan.org) and [reddit](https://www.reddit.com/) (comin
 ## Try news.ycombinator.com
 - [`Mozilla Is Hiring a Developer to Work on Thunderbird Full-Time`](https://mrandri19.github.io/comments-as-a-graph/?thread=hn)
 
-## Try reddit
+## Try reddit.com
 - [`Chrome 64 - What's New in DevTools`](https://mrandri19.github.io/comments-as-a-graph/?thread=reddit)
 
-## Try other threads
+## Try 4chan.org threads
 - [`42064745`](https://mrandri19.github.io/comments-as-a-graph/?thread=42064745)
 - [`44390482`](https://mrandri19.github.io/comments-as-a-graph/?thread=44390482)
 - [`44461398`](https://mrandri19.github.io/comments-as-a-graph/?thread=44461398)
