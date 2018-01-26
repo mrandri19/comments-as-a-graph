@@ -1,0 +1,281 @@
+digraph {
+	node [color="#B7C5D9" fillcolor="#D6DAF0" fontname="helvetica, open-sans" shape=rectangle style=filled]
+	edge [dir=back]
+	bgcolor="#eef2ff" fontname="helvetica, open-sans" splines=true
+	dta3zf0 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Well... a feature list would be nice.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3zf0 [fillcolor="0.5638888888888889 0.30708661417322836 0.69"]
+	dta52a4 -> dta3zf0
+	dta52a4 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Okay, so GCC 7 was the major release, its feature list is<BR/>[here](https://gcc.gnu.org/gcc-7/changes.html). GCC 7.3 is a bugfix release in<BR/>the GCC 7.x series; the list of bugs fixed is<BR/>[here](https://gcc.gnu.org/bugzilla/buglist.cgi?bug_status=RESOLVED&amp;resolution;=FIXED&amp;target;_milestone=7.3).<BR/>The most notable fixes are some code-generation changes to help mitigate<BR/>mitigate Spectre Variant 2 (CVE 2017-5715).<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta52a4 [fillcolor="0.5638888888888889 0.30078740157480316 0.69"]
+	dta4wmq -> dta3zf0
+	dta4wmq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Ha! Good joke!<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4wmq [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dt9n6lv [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>How does the compiler help mitigate Spectre? Obviously "bad guys" wouldn't<BR/>want to use a compiler with such mitigations - so how does it help the "good<BR/>guys"?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9n6lv [fillcolor="0.5638888888888889 0.31968503937007875 0.69"]
+	dt9nddj -> dt9n6lv
+	dt9nddj [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The "bad guys" aren't the one compiling the code that is vulnerable to<BR/>Spectre. Exploiting Spectre involves targeting _someone else's_ code to do<BR/>something malicious.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nddj [fillcolor="0.5638888888888889 0.8614173228346458 0.69"]
+	dt9nipn -> dt9nddj
+	dt9nipn [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I thought Spectre required the "bad guys" to be able to execute *their*<BR/>code/binary on the CPU, which would be compiled by "them"?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nipn [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dt9nkaz -> dt9nipn
+	dt9nkaz [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>That is true, but the code that they execute is exploiting vulnerabilities in<BR/>your software. If you can remove those vulnerabilities, their code is no<BR/>longer useful.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nkaz [fillcolor="0.5638888888888889 0.6220472440944882 0.69"]
+	dt9s5w2 -> dt9nipn
+	dt9s5w2 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes, but this usually applies to interpreters (think about javascript, etc.).<BR/>The patches are so that a good guy can build an interpreter that can execute<BR/>sandboxed code coming from (potentially) bad guys.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9s5w2 [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dt9odhq -> dt9nipn
+	dt9odhq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>How convenient of the chip manufacturers to phrase it as a local code<BR/>execution exploit. http://www.daemonology.net/blog/2018-01-17-some-thoughts-<BR/>on-spectre-and-meltdown.html &gt; This makes attacks far easier, but should not<BR/>be considered to be a prerequisite! Remote timing attacks are feasible, and I<BR/>am confident that we will see a demonstration of "innocent" code being used<BR/>for the task of extracting the microarchitectural state information before<BR/>long. (Indeed, I think it is very likely that certain people are already<BR/>making use of such remote microarchitectural side channel attacks.)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9odhq [fillcolor="0.5638888888888889 0.262992125984252 0.69"]
+	dta3b2b -> dt9odhq
+	dta3b2b [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Meltdown is a real vulnerability, but Spectre seems unfair to pin on hardware<BR/>manufacturers. I would expect that code at the correct privilege level can<BR/>speculatively read from its own addresses. If it's faster, that's how the<BR/>processor *should* work. It's not hardware manufacturers' faults that web<BR/>browsers are effectively shitty operating systems and execute untrusted code<BR/>without using the existing hardware enforced privilege controls.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3b2b [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dta905h -> dta3b2b
+	dta905h [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Both Meltdown and Spectre are based on the hardware vulnerability that the<BR/>cache state isn't restored when an out-of-order execution is discarded.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta905h [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9yicc -> dt9nipn
+	dt9yicc [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The proof-of-concept exploits that Google published are built around custom<BR/>attack code, so it requires running the attacker's code. However, they<BR/>explicitly note in the papers that this was done for the sake of expediency —<BR/>The idea being that this proves that, if you can find exploitable code that<BR/>has that general shape, you can attack it. For example, Webkit published a<BR/>[blog post](https://webkit.org/blog/8048/what-spectre-and-meltdown-mean-for-<BR/>webkit/) explaining how they were exposed to attacks.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9yicc [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9ufh6 -> dt9n6lv
+	dt9ufh6 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>-fno-spectre-plz<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9ufh6 [fillcolor="0.5638888888888889 0.5464566929133858 0.69"]
+	dt9ndh7 -> dt9n6lv
+	dt9ndh7 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Because the binaries compiled with the compiler will mitigate different<BR/>vulnerabilities. This means that if you compile (say) your web browser with<BR/>such a compiler (or more likely someone else does and you just get the<BR/>binary), then your web browser should be harder to exploit by the bad guys.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9ndh7 [fillcolor="0.5638888888888889 0.30708661417322836 0.69"]
+	dt9th16 -> dt9ndh7
+	dt9th16 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Only if you compile with the appropriate options. (For x86, the new ones are<BR/>-mindirect-branch=, -mindirect-branch-register and -mfunction-return=.<BR/>[Details<BR/>here](https://gcc.gnu.org/onlinedocs/gcc-7.3.0/gcc/x86-Options.html#x86-Options)<BR/>near the bottom) If you're not compiling something that runs untrusted code<BR/>with fine grained clock access, you probably don't need them.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9th16 [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dt9u83p -> dt9th16
+	dt9u83p [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes I should have been more clear. Thanks for adding the info! I generally<BR/>rely on the great work of all the debian volunteers and let them worry about<BR/>such details. :)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9u83p [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9ogk1 -> dt9n6lv
+	dt9ogk1 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>It's come to be known as the<BR/>[retpoline](https://www.reddit.com/r/cpp/comments/7sm7jw/before_and_after_retpoline/)<BR/>fix. Both clang and gcc support it, but I'm not sure about others.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9ogk1 [fillcolor="0.5638888888888889 0.2692913385826772 0.69"]
+	dt9tl2r -> dt9n6lv
+	dt9tl2r [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>For x86, the relevant new options are -mindirect-branch=, -mindirect-branch-<BR/>register and -mfunction-return=. [Details<BR/>here](https://gcc.gnu.org/onlinedocs/gcc-7.3.0/gcc/x86-Options.html#x86-Options)<BR/>near the bottom. EDIT: And -mretpoline for clang. [Examples for both<BR/>compilers](https://godbolt.org/g/zofp9L)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9tl2r [fillcolor="0.5638888888888889 0.2377952755905512 0.69"]
+	dta62i1 -> dt9n6lv
+	dta62i1 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Interestingly visual studio also released a similar update today.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta62i1 [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta208h [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>7.3? wow. its all grown up. I still use 2.9.5 for some work and can still<BR/>remember running egcs. I must have blanked v5/v6.. I remember 4...<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta208h [fillcolor="0.5638888888888889 0.2440944881889764 0.69"]
+	dta2mhz -> dta208h
+	dta2mhz [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt; I still use 2.9.5 for some work ??? You know GCC is backwards compatible,<BR/>right?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta2mhz [fillcolor="0.5638888888888889 0.30708661417322836 0.69"]
+	dta3h1r -> dta2mhz
+	dta3h1r [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>after 2.9 they switched the architecture to C++, and not all backends survived<BR/>the same way, and some cpu were dropped... some took longer than others to<BR/>return. sometimes its easier to keep old compiler and its known issues and<BR/>behaviours than migrate to newer compiler / ABI and not know the issues.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3h1r [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dta4h9u -> dta3h1r
+	dta4h9u [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Christ, I don't envy you. GCC 3.3 was an absolute nightmare to work with,<BR/>never mind 2.9. I wouldn't go back to that if they doubled my pay!<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4h9u [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta4pc0 -> dta3h1r
+	dta4pc0 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>For a little while, maybe. But we're coming up on 20 years now.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4pc0 [fillcolor="0.5638888888888889 0.2188976377952756 0.69"]
+	dta37bs -> dta2mhz
+	dta37bs [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Maybe some funky embedded toolchain?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta37bs [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dta2cf5 -> dta208h
+	dta2cf5 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>FWIW, I was at a company in the 2000's that was stuck on the same gcc version<BR/>(Solaris on Sun h/w), and I believe it still is.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta2cf5 [fillcolor="0.5638888888888889 0.2188976377952756 0.69"]
+	dta5uiq -> dta208h
+	dta5uiq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt; I must have blanked v5/v6.. Part of this was instead of 4.10, they changed<BR/>numbering, basically bumping off the 4. major version and promoting the minor<BR/>to major version. So the "major versions" are 4.9 to 5.1 to 6.1 to 7.1. (x.0<BR/>are "unstable releases")<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta5uiq [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta6uj3 -> dta5uiq
+	dta6uj3 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>ooh ok, that makes sense. thank you.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta6uj3 [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta5pu4 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Congratulations! Is there any interest within GCC's development community to<BR/>implement and include a Rust front-end with the compiler collection? The most<BR/>recent effort in this space seems to have stalled years ago:<BR/>https://gcc.gnu.org/wiki/RustFrontEnd<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta5pu4 [fillcolor="0.5638888888888889 0.2188976377952756 0.69"]
+	dta0an6 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt;This release is available from the FTP servers listed at: Who is using ftp to<BR/>download Gcc nowadays?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta0an6 [fillcolor="0.5638888888888889 0.17480314960629922 0.69"]
+	dta15mv -> dta0an6
+	dta15mv [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The maintainers of the .deb and .rpm distribution files.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta15mv [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dta3csu -> dta15mv
+	dta3csu [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I didn't say it is wrong. I was just wondering<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3csu [fillcolor="0.5638888888888889 0.231496062992126 0.69"]
+	dta3okx -> dta3csu
+	dta3okx [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yeah, but your point is valid. Most people are just going to do an update with<BR/>apt-get/dnf/yum/whatever. But the people who create those either have to get<BR/>it by FTP or check it out of version control.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3okx [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta49bt -> dta0an6
+	dta49bt [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I just did this yesterday to install an updated version of GCC on a machine<BR/>that I don't have admin access on. I suppose I could have downloaded an rpm,<BR/>manually extracted the contents, moved them around, etc, but building GCC is<BR/>easy enough that this isn't worth it -- I have a five line bash script that I<BR/>fire off before I leave work and boom, new GCC in the morning.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta49bt [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta1veu -> dta0an6
+	dta1veu [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>What's wrong with using ftp?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta1veu [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta3s3f -> dta1veu
+	dta3s3f [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I didn't say it is wrong. I was just wondering.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3s3f [fillcolor="0.5638888888888889 0.231496062992126 0.69"]
+	dta39kh -> dta1veu
+	dta39kh [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>No possibility of preventing Man In The Middle download interception to give<BR/>you a tainted compiler.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta39kh [fillcolor="0.5638888888888889 0.18110236220472442 0.69"]
+	dta3pys -> dta39kh
+	dta3pys [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I assume they sign their code, so that shouldn't be possible.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3pys [fillcolor="0.5638888888888889 0.2377952755905512 0.69"]
+	dt9xzz5 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>friendship ended with gcc, now clang is my best friend<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9xzz5 [fillcolor="0.5638888888888889 0.06141732283464568 0.69"]
+	dta52a4 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Okay, so GCC 7 was the major release, its feature list is<BR/>[here](https://gcc.gnu.org/gcc-7/changes.html). GCC 7.3 is a bugfix release in<BR/>the GCC 7.x series; the list of bugs fixed is<BR/>[here](https://gcc.gnu.org/bugzilla/buglist.cgi?bug_status=RESOLVED&amp;resolution;=FIXED&amp;target;_milestone=7.3).<BR/>The most notable fixes are some code-generation changes to help mitigate<BR/>mitigate Spectre Variant 2 (CVE 2017-5715).<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta52a4 [fillcolor="0.5638888888888889 0.30078740157480316 0.69"]
+	dta4wmq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Ha! Good joke!<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4wmq [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dt9nddj [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The "bad guys" aren't the one compiling the code that is vulnerable to<BR/>Spectre. Exploiting Spectre involves targeting _someone else's_ code to do<BR/>something malicious.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nddj [fillcolor="0.5638888888888889 0.8614173228346458 0.69"]
+	dt9nipn -> dt9nddj
+	dt9nipn [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I thought Spectre required the "bad guys" to be able to execute *their*<BR/>code/binary on the CPU, which would be compiled by "them"?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nipn [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dt9nkaz -> dt9nipn
+	dt9nkaz [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>That is true, but the code that they execute is exploiting vulnerabilities in<BR/>your software. If you can remove those vulnerabilities, their code is no<BR/>longer useful.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nkaz [fillcolor="0.5638888888888889 0.6220472440944882 0.69"]
+	dt9s5w2 -> dt9nipn
+	dt9s5w2 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes, but this usually applies to interpreters (think about javascript, etc.).<BR/>The patches are so that a good guy can build an interpreter that can execute<BR/>sandboxed code coming from (potentially) bad guys.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9s5w2 [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dt9odhq -> dt9nipn
+	dt9odhq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>How convenient of the chip manufacturers to phrase it as a local code<BR/>execution exploit. http://www.daemonology.net/blog/2018-01-17-some-thoughts-<BR/>on-spectre-and-meltdown.html &gt; This makes attacks far easier, but should not<BR/>be considered to be a prerequisite! Remote timing attacks are feasible, and I<BR/>am confident that we will see a demonstration of "innocent" code being used<BR/>for the task of extracting the microarchitectural state information before<BR/>long. (Indeed, I think it is very likely that certain people are already<BR/>making use of such remote microarchitectural side channel attacks.)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9odhq [fillcolor="0.5638888888888889 0.262992125984252 0.69"]
+	dta3b2b -> dt9odhq
+	dta3b2b [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Meltdown is a real vulnerability, but Spectre seems unfair to pin on hardware<BR/>manufacturers. I would expect that code at the correct privilege level can<BR/>speculatively read from its own addresses. If it's faster, that's how the<BR/>processor *should* work. It's not hardware manufacturers' faults that web<BR/>browsers are effectively shitty operating systems and execute untrusted code<BR/>without using the existing hardware enforced privilege controls.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3b2b [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dta905h -> dta3b2b
+	dta905h [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Both Meltdown and Spectre are based on the hardware vulnerability that the<BR/>cache state isn't restored when an out-of-order execution is discarded.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta905h [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9yicc -> dt9nipn
+	dt9yicc [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The proof-of-concept exploits that Google published are built around custom<BR/>attack code, so it requires running the attacker's code. However, they<BR/>explicitly note in the papers that this was done for the sake of expediency —<BR/>The idea being that this proves that, if you can find exploitable code that<BR/>has that general shape, you can attack it. For example, Webkit published a<BR/>[blog post](https://webkit.org/blog/8048/what-spectre-and-meltdown-mean-for-<BR/>webkit/) explaining how they were exposed to attacks.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9yicc [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9ufh6 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>-fno-spectre-plz<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9ufh6 [fillcolor="0.5638888888888889 0.5464566929133858 0.69"]
+	dt9ndh7 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Because the binaries compiled with the compiler will mitigate different<BR/>vulnerabilities. This means that if you compile (say) your web browser with<BR/>such a compiler (or more likely someone else does and you just get the<BR/>binary), then your web browser should be harder to exploit by the bad guys.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9ndh7 [fillcolor="0.5638888888888889 0.30708661417322836 0.69"]
+	dt9th16 -> dt9ndh7
+	dt9th16 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Only if you compile with the appropriate options. (For x86, the new ones are<BR/>-mindirect-branch=, -mindirect-branch-register and -mfunction-return=.<BR/>[Details<BR/>here](https://gcc.gnu.org/onlinedocs/gcc-7.3.0/gcc/x86-Options.html#x86-Options)<BR/>near the bottom) If you're not compiling something that runs untrusted code<BR/>with fine grained clock access, you probably don't need them.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9th16 [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dt9u83p -> dt9th16
+	dt9u83p [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes I should have been more clear. Thanks for adding the info! I generally<BR/>rely on the great work of all the debian volunteers and let them worry about<BR/>such details. :)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9u83p [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9ogk1 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>It's come to be known as the<BR/>[retpoline](https://www.reddit.com/r/cpp/comments/7sm7jw/before_and_after_retpoline/)<BR/>fix. Both clang and gcc support it, but I'm not sure about others.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9ogk1 [fillcolor="0.5638888888888889 0.2692913385826772 0.69"]
+	dt9tl2r [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>For x86, the relevant new options are -mindirect-branch=, -mindirect-branch-<BR/>register and -mfunction-return=. [Details<BR/>here](https://gcc.gnu.org/onlinedocs/gcc-7.3.0/gcc/x86-Options.html#x86-Options)<BR/>near the bottom. EDIT: And -mretpoline for clang. [Examples for both<BR/>compilers](https://godbolt.org/g/zofp9L)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9tl2r [fillcolor="0.5638888888888889 0.2377952755905512 0.69"]
+	dta62i1 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Interestingly visual studio also released a similar update today.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta62i1 [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta2mhz [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt; I still use 2.9.5 for some work ??? You know GCC is backwards compatible,<BR/>right?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta2mhz [fillcolor="0.5638888888888889 0.30708661417322836 0.69"]
+	dta3h1r -> dta2mhz
+	dta3h1r [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>after 2.9 they switched the architecture to C++, and not all backends survived<BR/>the same way, and some cpu were dropped... some took longer than others to<BR/>return. sometimes its easier to keep old compiler and its known issues and<BR/>behaviours than migrate to newer compiler / ABI and not know the issues.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3h1r [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dta4h9u -> dta3h1r
+	dta4h9u [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Christ, I don't envy you. GCC 3.3 was an absolute nightmare to work with,<BR/>never mind 2.9. I wouldn't go back to that if they doubled my pay!<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4h9u [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta4pc0 -> dta3h1r
+	dta4pc0 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>For a little while, maybe. But we're coming up on 20 years now.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4pc0 [fillcolor="0.5638888888888889 0.2188976377952756 0.69"]
+	dta37bs -> dta2mhz
+	dta37bs [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Maybe some funky embedded toolchain?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta37bs [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dta2cf5 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>FWIW, I was at a company in the 2000's that was stuck on the same gcc version<BR/>(Solaris on Sun h/w), and I believe it still is.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta2cf5 [fillcolor="0.5638888888888889 0.2188976377952756 0.69"]
+	dta5uiq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt; I must have blanked v5/v6.. Part of this was instead of 4.10, they changed<BR/>numbering, basically bumping off the 4. major version and promoting the minor<BR/>to major version. So the "major versions" are 4.9 to 5.1 to 6.1 to 7.1. (x.0<BR/>are "unstable releases")<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta5uiq [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta6uj3 -> dta5uiq
+	dta6uj3 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>ooh ok, that makes sense. thank you.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta6uj3 [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta15mv [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The maintainers of the .deb and .rpm distribution files.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta15mv [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dta3csu -> dta15mv
+	dta3csu [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I didn't say it is wrong. I was just wondering<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3csu [fillcolor="0.5638888888888889 0.231496062992126 0.69"]
+	dta3okx -> dta3csu
+	dta3okx [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yeah, but your point is valid. Most people are just going to do an update with<BR/>apt-get/dnf/yum/whatever. But the people who create those either have to get<BR/>it by FTP or check it out of version control.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3okx [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta49bt [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I just did this yesterday to install an updated version of GCC on a machine<BR/>that I don't have admin access on. I suppose I could have downloaded an rpm,<BR/>manually extracted the contents, moved them around, etc, but building GCC is<BR/>easy enough that this isn't worth it -- I have a five line bash script that I<BR/>fire off before I leave work and boom, new GCC in the morning.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta49bt [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta1veu [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>What's wrong with using ftp?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta1veu [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta3s3f -> dta1veu
+	dta3s3f [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I didn't say it is wrong. I was just wondering.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3s3f [fillcolor="0.5638888888888889 0.231496062992126 0.69"]
+	dta39kh -> dta1veu
+	dta39kh [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>No possibility of preventing Man In The Middle download interception to give<BR/>you a tainted compiler.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta39kh [fillcolor="0.5638888888888889 0.18110236220472442 0.69"]
+	dta3pys -> dta39kh
+	dta3pys [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I assume they sign their code, so that shouldn't be possible.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3pys [fillcolor="0.5638888888888889 0.2377952755905512 0.69"]
+	dt9nipn [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I thought Spectre required the "bad guys" to be able to execute *their*<BR/>code/binary on the CPU, which would be compiled by "them"?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nipn [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dt9nkaz -> dt9nipn
+	dt9nkaz [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>That is true, but the code that they execute is exploiting vulnerabilities in<BR/>your software. If you can remove those vulnerabilities, their code is no<BR/>longer useful.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nkaz [fillcolor="0.5638888888888889 0.6220472440944882 0.69"]
+	dt9s5w2 -> dt9nipn
+	dt9s5w2 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes, but this usually applies to interpreters (think about javascript, etc.).<BR/>The patches are so that a good guy can build an interpreter that can execute<BR/>sandboxed code coming from (potentially) bad guys.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9s5w2 [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dt9odhq -> dt9nipn
+	dt9odhq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>How convenient of the chip manufacturers to phrase it as a local code<BR/>execution exploit. http://www.daemonology.net/blog/2018-01-17-some-thoughts-<BR/>on-spectre-and-meltdown.html &gt; This makes attacks far easier, but should not<BR/>be considered to be a prerequisite! Remote timing attacks are feasible, and I<BR/>am confident that we will see a demonstration of "innocent" code being used<BR/>for the task of extracting the microarchitectural state information before<BR/>long. (Indeed, I think it is very likely that certain people are already<BR/>making use of such remote microarchitectural side channel attacks.)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9odhq [fillcolor="0.5638888888888889 0.262992125984252 0.69"]
+	dta3b2b -> dt9odhq
+	dta3b2b [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Meltdown is a real vulnerability, but Spectre seems unfair to pin on hardware<BR/>manufacturers. I would expect that code at the correct privilege level can<BR/>speculatively read from its own addresses. If it's faster, that's how the<BR/>processor *should* work. It's not hardware manufacturers' faults that web<BR/>browsers are effectively shitty operating systems and execute untrusted code<BR/>without using the existing hardware enforced privilege controls.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3b2b [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dta905h -> dta3b2b
+	dta905h [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Both Meltdown and Spectre are based on the hardware vulnerability that the<BR/>cache state isn't restored when an out-of-order execution is discarded.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta905h [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9yicc -> dt9nipn
+	dt9yicc [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The proof-of-concept exploits that Google published are built around custom<BR/>attack code, so it requires running the attacker's code. However, they<BR/>explicitly note in the papers that this was done for the sake of expediency —<BR/>The idea being that this proves that, if you can find exploitable code that<BR/>has that general shape, you can attack it. For example, Webkit published a<BR/>[blog post](https://webkit.org/blog/8048/what-spectre-and-meltdown-mean-for-<BR/>webkit/) explaining how they were exposed to attacks.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9yicc [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9th16 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Only if you compile with the appropriate options. (For x86, the new ones are<BR/>-mindirect-branch=, -mindirect-branch-register and -mfunction-return=.<BR/>[Details<BR/>here](https://gcc.gnu.org/onlinedocs/gcc-7.3.0/gcc/x86-Options.html#x86-Options)<BR/>near the bottom) If you're not compiling something that runs untrusted code<BR/>with fine grained clock access, you probably don't need them.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9th16 [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dt9u83p -> dt9th16
+	dt9u83p [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes I should have been more clear. Thanks for adding the info! I generally<BR/>rely on the great work of all the debian volunteers and let them worry about<BR/>such details. :)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9u83p [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta3h1r [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>after 2.9 they switched the architecture to C++, and not all backends survived<BR/>the same way, and some cpu were dropped... some took longer than others to<BR/>return. sometimes its easier to keep old compiler and its known issues and<BR/>behaviours than migrate to newer compiler / ABI and not know the issues.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3h1r [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dta4h9u -> dta3h1r
+	dta4h9u [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Christ, I don't envy you. GCC 3.3 was an absolute nightmare to work with,<BR/>never mind 2.9. I wouldn't go back to that if they doubled my pay!<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4h9u [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta4pc0 -> dta3h1r
+	dta4pc0 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>For a little while, maybe. But we're coming up on 20 years now.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4pc0 [fillcolor="0.5638888888888889 0.2188976377952756 0.69"]
+	dta37bs [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Maybe some funky embedded toolchain?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta37bs [fillcolor="0.5638888888888889 0.2125984251968504 0.69"]
+	dta6uj3 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>ooh ok, that makes sense. thank you.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta6uj3 [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta3csu [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I didn't say it is wrong. I was just wondering<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3csu [fillcolor="0.5638888888888889 0.231496062992126 0.69"]
+	dta3okx -> dta3csu
+	dta3okx [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yeah, but your point is valid. Most people are just going to do an update with<BR/>apt-get/dnf/yum/whatever. But the people who create those either have to get<BR/>it by FTP or check it out of version control.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3okx [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta3s3f [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I didn't say it is wrong. I was just wondering.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3s3f [fillcolor="0.5638888888888889 0.231496062992126 0.69"]
+	dta39kh [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>No possibility of preventing Man In The Middle download interception to give<BR/>you a tainted compiler.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta39kh [fillcolor="0.5638888888888889 0.18110236220472442 0.69"]
+	dta3pys -> dta39kh
+	dta3pys [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I assume they sign their code, so that shouldn't be possible.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3pys [fillcolor="0.5638888888888889 0.2377952755905512 0.69"]
+	dt9nkaz [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>That is true, but the code that they execute is exploiting vulnerabilities in<BR/>your software. If you can remove those vulnerabilities, their code is no<BR/>longer useful.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9nkaz [fillcolor="0.5638888888888889 0.6220472440944882 0.69"]
+	dt9s5w2 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes, but this usually applies to interpreters (think about javascript, etc.).<BR/>The patches are so that a good guy can build an interpreter that can execute<BR/>sandboxed code coming from (potentially) bad guys.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9s5w2 [fillcolor="0.5638888888888889 0.28818897637795277 0.69"]
+	dt9odhq [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>How convenient of the chip manufacturers to phrase it as a local code<BR/>execution exploit. http://www.daemonology.net/blog/2018-01-17-some-thoughts-<BR/>on-spectre-and-meltdown.html &gt; This makes attacks far easier, but should not<BR/>be considered to be a prerequisite! Remote timing attacks are feasible, and I<BR/>am confident that we will see a demonstration of "innocent" code being used<BR/>for the task of extracting the microarchitectural state information before<BR/>long. (Indeed, I think it is very likely that certain people are already<BR/>making use of such remote microarchitectural side channel attacks.)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9odhq [fillcolor="0.5638888888888889 0.262992125984252 0.69"]
+	dta3b2b -> dt9odhq
+	dta3b2b [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Meltdown is a real vulnerability, but Spectre seems unfair to pin on hardware<BR/>manufacturers. I would expect that code at the correct privilege level can<BR/>speculatively read from its own addresses. If it's faster, that's how the<BR/>processor *should* work. It's not hardware manufacturers' faults that web<BR/>browsers are effectively shitty operating systems and execute untrusted code<BR/>without using the existing hardware enforced privilege controls.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3b2b [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dta905h -> dta3b2b
+	dta905h [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Both Meltdown and Spectre are based on the hardware vulnerability that the<BR/>cache state isn't restored when an out-of-order execution is discarded.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta905h [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9yicc [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>The proof-of-concept exploits that Google published are built around custom<BR/>attack code, so it requires running the attacker's code. However, they<BR/>explicitly note in the papers that this was done for the sake of expediency —<BR/>The idea being that this proves that, if you can find exploitable code that<BR/>has that general shape, you can attack it. For example, Webkit published a<BR/>[blog post](https://webkit.org/blog/8048/what-spectre-and-meltdown-mean-for-<BR/>webkit/) explaining how they were exposed to attacks.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9yicc [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dt9u83p [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yes I should have been more clear. Thanks for adding the info! I generally<BR/>rely on the great work of all the debian volunteers and let them worry about<BR/>such details. :)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dt9u83p [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta4h9u [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Christ, I don't envy you. GCC 3.3 was an absolute nightmare to work with,<BR/>never mind 2.9. I wouldn't go back to that if they doubled my pay!<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4h9u [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta4pc0 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>For a little while, maybe. But we're coming up on 20 years now.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta4pc0 [fillcolor="0.5638888888888889 0.2188976377952756 0.69"]
+	dta3okx [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Yeah, but your point is valid. Most people are just going to do an update with<BR/>apt-get/dnf/yum/whatever. But the people who create those either have to get<BR/>it by FTP or check it out of version control.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3okx [fillcolor="0.5638888888888889 0.2251968503937008 0.69"]
+	dta3pys [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I assume they sign their code, so that shouldn't be possible.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3pys [fillcolor="0.5638888888888889 0.2377952755905512 0.69"]
+	dta3b2b [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Meltdown is a real vulnerability, but Spectre seems unfair to pin on hardware<BR/>manufacturers. I would expect that code at the correct privilege level can<BR/>speculatively read from its own addresses. If it's faster, that's how the<BR/>processor *should* work. It's not hardware manufacturers' faults that web<BR/>browsers are effectively shitty operating systems and execute untrusted code<BR/>without using the existing hardware enforced privilege controls.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta3b2b [fillcolor="0.5638888888888889 0.2566929133858268 0.69"]
+	dta905h -> dta3b2b
+	dta905h [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Both Meltdown and Spectre are based on the hardware vulnerability that the<BR/>cache state isn't restored when an out-of-order execution is discarded.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta905h [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+	dta905h [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Both Meltdown and Spectre are based on the hardware vulnerability that the<BR/>cache state isn't restored when an out-of-order execution is discarded.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	dta905h [fillcolor="0.5638888888888889 0.2062992125984252 0.69"]
+}

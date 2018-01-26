@@ -3,9 +3,12 @@ Read [4chan](https://www.4chan.org) and [reddit](https://www.reddit.com/) (comin
 
 ## Try news.ycombinator.com
 - [`Mozilla Is Hiring a Developer to Work on Thunderbird Full-Time`](https://mrandri19.github.io/comments-as-a-graph/?thread=hn)
+- [`3,500 Occult Manuscripts Will Be Digitized and Made Freely Available Online`](https://mrandri19.github.io/comments-as-a-graph/?thread=hn2)
+- [`Building an AlphaZero AI using Python and Keras`](https://mrandri19.github.io/comments-as-a-graph/?thread=hn3)
 
 ## Try reddit.com
 - [`Chrome 64 - What's New in DevTools`](https://mrandri19.github.io/comments-as-a-graph/?thread=reddit)
+- [`GCC 7.3 Released`](https://mrandri19.github.io/comments-as-a-graph/?thread=reddit2)
 
 ## Try 4chan.org threads
 - [`42064745`](https://mrandri19.github.io/comments-as-a-graph/?thread=42064745)

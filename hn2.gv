@@ -1,0 +1,52 @@
+digraph {
+	node [color="#B7C5D9" fillcolor="#F6F6EF" fontname="helvetica, open-sans" shape=rectangle style=filled]
+	edge [dir=back]
+	bgcolor="#eef2ff" fontname="helvetica, open-sans" splines=true
+	16240928 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I was totally unaware that this Ritmam library existed. I can’t pretend to be<BR/>into the occult, but I like the idea of studying people who are/we’re, and<BR/>this seems like a terrific resource.<BR/><BR/>Only downside...<BR/><BR/>You want Great Old Ones? Because this is how you get Great Old Ones.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241023 -> 16240928
+	16241023 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>I really like these old texts because it's interesting to try and get into the<BR/>mindset of the authors. To the medieval occultist, that plant over there is<BR/>growing well because Saturn is ascending or whatever, and if a rabid dog bites<BR/>you, you should apply the plant to the wound because the melancholic nature of<BR/>Saturn will counteract the mania of the rabies, etc. Why did such-and-such<BR/>happen? A demon did it. It's a completely different way of looking at things,<BR/>it's very strange to our modern sensibilities but it's also surprisingly<BR/>developed and just fascinating.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241087 -> 16241023
+	16241087 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>If you're interested in the study of religion at all (at least as a human<BR/>affectation), it can get pretty interesting to get into the Hermetic and<BR/>Gnostic texts. Some of the traditions and proposed knowledge exists on a<BR/>timeline parallel to popular history going back thousands of years. It's<BR/>really quite something.<BR/><BR/>It combined with other mystic traditions ultimately informed the theosophical<BR/>movement of the 19th and 20th century through to the magick of Aleister<BR/>Crowley. His sex magick informs a lot of the modern incel, red-pill, and proud<BR/>boy ideas that you must refrain from "spilling your seed"—that your<BR/>reproductive emissions contain some of your essential energy. The result being<BR/>that you have to abstain or otherwise be reduced to a plodding pile of<BR/>unenlightened goo (to give the idea some imagery).<BR/><BR/>So it's especially interesting, and a little funny, how in spite of the larger<BR/>mysticism having fallen out of popular favour as a way to understand the<BR/>world, they still influence a great part of it in a variety of outcomes as a<BR/>result of lingering practices and beliefs finding their way into new systems.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241175 -> 16241087
+	16241175 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt; It combined with other mystic traditions ultimately informed the<BR/>theosophical movement of the 19th and 20th century through to the magick of<BR/>Aleister Crowley. His sex magick informs a lot of the modern incel, red-pill,<BR/>and proud boy ideas that you must refrain from "spilling your seed"—that your<BR/>reproductive emissions contain some of your essential energy. The result being<BR/>that you have to abstain or otherwise be reduced to a plodding pile of<BR/>unenlightened goo (to give the idea some imagery).<BR/><BR/>Those seem to have been relatively widely-held beliefs based on the humour<BR/>system of medicine, see [https://aeon.co/essays/getting-down-and-medieval-the-<BR/>sex-liv...](https://aeon.co/essays/getting-down-and-medieval-the-sex-lives-of-<BR/>the-middle-ages) posted here on HN a few days ago.<BR/><BR/>Taoists had similar ideas:<BR/>[https://en.wikipedia.org/wiki/Taoist_sexual_practices](https://en.wikipedia.org/wiki/Taoist_sexual_practices)<BR/><BR/>Edit: also I'll never spell it "magick" because Crowley was a toolbag<BR/><BR/>Edit 2: There's also the current meme that (humorously) claims a man who<BR/>remains a virgin to the age of 30 will become a wizard, which is presumably<BR/>drawing on all these historical beliefs.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241275 -> 16241175
+	16241275 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>&gt; Edit: also I'll never spell it "magick" because Crowley was a toolbag<BR/><BR/>You're right about that one. I did it only for the continuity being that I was<BR/>specifically commenting on his circle.<BR/><BR/>The humour medicine was a little different. That article was speaking more to<BR/>the fact that it was believed people had to release sexual energy for fear of<BR/>death.<BR/><BR/>The Taoists were the opposite of that. They thought you should preserve fluids<BR/>to preserve and prolong life.<BR/><BR/>Crowley's version was closer to your comment on the meme, which sidles with<BR/>the red-pill version I mentioned above: that conserving your sexual energy<BR/>essential bestows you with powers, or at least advantage over the "wasteful"<BR/>ignorant masses.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241651 -> 16241175
+	16241651 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Incels don't practice noFap. If you actually check incel forums, they heavily<BR/>ridicule the idea and the Redpill types who do.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241039 -> 16241023
+	16241039 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>That's also how I troubleshoot kubernetes problems.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241381 -> 16241039
+	16241381 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>You may think you're kidding, but modern technology stacks have gotten so<BR/>complicated and entangled that mystical troubleshooting is the routine<BR/>solution.<BR/><BR/>Not working? Reboot it. For all I know, the phase of Saturn (as calculated by<BR/>some library down in the framework) does affect Kubernetes.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241569 -> 16241381
+	16241569 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>[http://www.catb.org/jargon/html/P/phase-of-the-<BR/>moon.html](http://www.catb.org/jargon/html/P/phase-of-the-moon.html)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241465 -> 16241381
+	16241465 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Fix your PC with a crystal pendulum<BR/><BR/>[https://m.youtube.com/watch?v=-MM0Z_jCrGo](https://m.youtube.com/watch?v=-MM0Z_jCrGo)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241102 -> 16241039
+	16241102 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>[Angry manager stomps in]<BR/><BR/>"WHY DID WE GO DOWN??? WHAT HAPPENED!??"<BR/><BR/>"Nothing much we could do boss, Saturn ascended"<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241386 -> 16241102
+	16241386 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Beats "sunspots."<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241356 -> 16241039
+	16241356 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>NOTEXT<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241303 -> 16240928
+	16241303 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>It's just not exciting without Lovecraft. What I mean is, the word "occult" in<BR/>this context may be a boring label invented by boring people, kind of like<BR/>"off topic" on stackoverflow.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241113 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>There’s a pretty long documentary/interview with the owner on prime video:<BR/>[https://www.primevideo.com/detail/0ND6NJX19GO8N1C0MPEE1D7UA8...](https://www.primevideo.com/detail/0ND6NJX19GO8N1C0MPEE1D7UA8/ref=sr_hom_c_unkc_1_1?sr=1-1&amp;qid=1516988507)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241273 -> 16241113
+	16241273 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Is it this one? [https://vimeo.com/179329765](https://vimeo.com/179329765)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241168 -> 16241113
+	16241168 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>your link just takes me to my amazon prime log in page....do you have the<BR/>title of the documentary please?<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241319 -> 16241168
+	16241319 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Sorry, it’s called “The Ritman Library - Amsterdam”<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241284 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Their site indicates more than 25k books (1,6k available):<BR/><BR/>[http://embassyofthefreemind.com/en/library/online-<BR/>catalogue/...](http://embassyofthefreemind.com/en/library/online-<BR/>catalogue/?mode=gallery&amp;view=horizontal&amp;sort=random%7B1516989550519%7D%20asc)<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16240834 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>If only it were so easy to do this (legally) for research papers...<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241062 -> 16240834
+	16241062 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>It is this easy for research papers which are equally old.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16240951 -> 16240834
+	16240951 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>NOTEXT<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16240918 -> 16240834
+	16240918 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Just change belief systems. Bing bang boom.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241390 -> 16240918
+	16241390 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>LOL. Well played.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241105 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Aleister Crowley is dancing a jig<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241383 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>Holy shit yes. It's too bad it's pre-1900s. I found something called the<BR/>Vampire Bible once and it was seriously the funniest thing I ever read.<BR/><BR/></FONT></TD></TR></TABLE>>]
+	16241475 [label=<<TABLE ALIGN="LEFT" BORDER="0"><TR><TD BALIGN="LEFT"><FONT>As far as I know, the only "occult" concept that has any merit is lucid<BR/>dreaming.<BR/><BR/>Harvard also did a study on meditation which showed lowered blood pressure as<BR/>compared to a control group which took a health class on high-blood pressure<BR/>management techniques (diet, low stress, etc). I can't find the study now.<BR/><BR/></FONT></TD></TR></TABLE>>]
+}
